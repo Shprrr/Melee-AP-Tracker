@@ -26,7 +26,7 @@ ITEM_MAPPING = {
     [23] = {"Zelda", "toggle"},
     [24] = {"Link", "toggle"},
     [25] = {"Pikachu", "toggle"},
-    
+
     -- Stages
     [26] = {"Brinstar Depths", "toggle"},
     [27] = {"Fourside", "toggle"},
@@ -39,7 +39,7 @@ ITEM_MAPPING = {
     [34] = {"Battlefield", "toggle"},
     [35] = {"Final Destination", "toggle"},
     [36] = {"Flat Zone", "toggle"},
-    
+
     -- 1P Modes
     [37] = {"Adventure Mode", "toggle"},
     [38] = {"Classic Mode", "toggle"},
@@ -48,22 +48,22 @@ ITEM_MAPPING = {
     [41] = {"Home-Run Contest", "toggle"},
     [42] = {"Multi-Man Melee", "toggle"},
     [43] = {"Events", "progressive"},
-    
+
     -- Character Trophies (examples - there are many more)
     [0x2C] = {"Mario (Trophy)", "toggle"},
     [0x2D] = {"Mario (Smash Trophy)", "toggle"},
     [0x2E] = {"Mario (Smash Alt Trophy)", "toggle"},
-    
+
     -- Lottery Pool Upgrades
     [337] = {"Lottery", "progressive"},
     [338] = {"Lottery Pool Upgrade (Adventure/Classic Clear)", "toggle"},
     [339] = {"Lottery Pool Upgrade (Secret Characters)", "toggle"},
     [340] = {"Lottery Pool Upgrade (200 Vs. Matches)", "toggle"},
     [341] = {"Lottery Pool Upgrade (250 Trophies)", "toggle"},
-    
+
     -- Special items
     [345] = {"Pikmin Savefile", "toggle"},
-    
+
     -- Trophy items (examples)
     ["Birdo (Trophy)"] = {"Birdo (Trophy)", "toggle"},
     ["Kraid (Trophy)"] = {"Kraid (Trophy)", "toggle"},
@@ -73,7 +73,7 @@ ITEM_MAPPING = {
 }
 
 -- Helper function to get tracker code from item description
-function get_tracker_code_for_item(item_description)
+local function get_tracker_code_for_item(item_description)
     if ITEM_MAPPING[item_description] then
         if type(ITEM_MAPPING[item_description]) == "string" then
             return ITEM_MAPPING[item_description]
@@ -81,7 +81,7 @@ function get_tracker_code_for_item(item_description)
             return ITEM_MAPPING[item_description][1]
         end
     end
-    
+
     -- Try numeric lookup
     local item_id = tonumber(item_description)
     if item_id and ITEM_MAPPING[item_id] then
@@ -89,12 +89,12 @@ function get_tracker_code_for_item(item_description)
             return ITEM_MAPPING[item_id][1]
         end
     end
-    
+
     return nil
 end
 
 -- Helper function to get item type from tracker code
-function get_item_type(tracker_code)
+local function get_item_type(tracker_code)
     for _, mapping in pairs(ITEM_MAPPING) do
         if type(mapping) == "table" and mapping[1] == tracker_code then
             return mapping[2]
@@ -104,9 +104,9 @@ function get_item_type(tracker_code)
 end
 
 -- Function to update trophy counters when trophies are received
-function updateTrophyCounters(item_name)
+local function updateTrophyCounters(item_name)
     if not item_name then return end
-    
+
     -- Check if it's a trophy item
     if item_name:find("Trophy") then
         local total_counter = Tracker:FindObjectForCode("total_trophies")
@@ -114,9 +114,9 @@ function updateTrophyCounters(item_name)
             total_counter.AcquiredCount = total_counter.AcquiredCount + 1
             print("Total trophies: " .. total_counter.AcquiredCount)
         end
-        
+
         -- Check if it's a character trophy
-        if item_name:find("Smash Trophy") or item_name:find("Smash Alt Trophy") or 
+        if item_name:find("Smash Trophy") or item_name:find("Smash Alt Trophy") or
            (item_name:find("Trophy") and not item_name:find("(")) then
             local char_counter = Tracker:FindObjectForCode("character_trophies")
             if char_counter then

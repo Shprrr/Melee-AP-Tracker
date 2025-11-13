@@ -6,911 +6,573 @@
     "chest_opened_img": "images/items/open.png",
     "access_rules": [],
     "children": [
-	  {
-		"name": "Lottery Base",
-		"access_rules": [],
-		"sections": [
-		  {
-			"name": "Andross (64)",
-
-
-		  },
-		  {
-			"name": "Baby Bowser",
-
-
-		  },
-		  {
-			"name": "Ball Kirby",
-
-
-		  },
-		  {
-			"name": "Balloon Fighter",
-
-
-		  },
-		  {
-			"name": "Barrel",
-
-
-		  },
-		  {
-			"name": "Barrel Cannon",
-
-
-		  },
-		  {
-			"name": "Bellossom",
-
-
-		  },
-		  {
-			"name": "Birdo",
-
-
-		  },
-		  {
-			"name": "Blastoise",
-
-
-		  },
-		  {
-			"name": "Bob-omb",
-
-
-		  },
-		  {
-			"name": "Bucket",
-
-
-		  },
-		  {
-			"name": "Bulbasaur",
-
-
-		  },
-		  {
-			"name": "Capsule",
-
-
-		  },
-		  {
-			"name": "Chikorita",
-
-
-		  },
-		  {
-			"name": "Clefairy",
-
-
-		  },
-		  {
-			"name": "Coin",
-
-
-		  },
-		  {
-			"name": "Crate",
-
-
-		  },
-		  {
-			"name": "Crobat",
-
-
-		  },
-		  {
-			"name": "Cyndaquil",
-
-
-		  },
-		  {
-			"name": "Daisy",
-
-
-		  },
-		  {
-			"name": "Donbe & Hikari",
-
-
-		  },
-		  {
-			"name": "Dr. Stewart",
-
-
-		  },
-		  {
-			"name": "Dr. Wright",
-
-
-		  },
-		  {
-			"name": "Ducks",
-
-
-		  },
-		  {
-			"name": "Egg",
-
-
-		  },
-		  {
-			"name": "Excitebike",
-
-
-		  },
-		  {
-			"name": "Fan",
-
-
-		  },
-		  {
-			"name": "Fire Flower",
-
-
-		  },
-		  {
-			"name": "Flipper",
-
-
-		  },
-		  {
-			"name": "Goldeen",
-
-
-		  },
-		  {
-			"name": "Heracross",
-
-
-		  },
-		  {
-			"name": "Heririn",
-
-
-		  },
-		  {
-			"name": "Home-Run Bat",
-
-
-		  },
-		  {
-			"name": "Igglybuff",
-
-
-		  },
-		  {
-			"name": "Jody Summer",
-
-
-		  },
-		  {
-			"name": "Kirby Hat 1",
-
-
-		  },
-		  {
-			"name": "Kirby Hat 2",
-
-
-		  },
-		  {
-			"name": "Kirby Hat 3",
-
-
-		  },
-		  {
-			"name": "Klap Trap",
-
-
-		  },
-		  {
-			"name": "Koopa Troopa",
-
-
-		  },
-		  {
-			"name": "Lakitu",
-
-
-		  },
-		  {
-			"name": "Metal Mario",
-
-
-		  },
-		  {
-			"name": "Metroid",
-
-
-		  },
-		  {
-			"name": "Monster",
-
-
-		  },
-		  {
-			"name": "Mr. Saturn",
-
-
-		  },
-		  {
-			"name": "Party Ball",
-
-
-		  },
-		  {
-			"name": "Poliwhirl",
-
-
-		  },
-		  {
-			"name": "Porygon2",
-
-
-		  },
-		  {
-			"name": "Racing Kart",
-
-
-		  },
-		  {
-			"name": "Raphael Raven",
-
-
-		  },
-		  {
-			"name": "Ray Gun",
-
-
-		  },
-		  {
-			"name": "Rick",
-
-
-		  },
-		  {
-			"name": "Ridley",
-
-
-		  },
-		  {
-			"name": "Ryota Hayami",
-
-
-		  },
-		  {
-			"name": "Scizor",
-
-
-		  },
-		  {
-			"name": "Slippy Toad",
-
-
-		  },
-		  {
-			"name": "Snorlax",
-
-
-		  },
-		  {
-			"name": "Squirtle",
-
-
-		  },
-		  {
-			"name": "Starman",
-
-
-		  },
-		  {
-			"name": "Starman (EarthBound)",
-
-
-		  },
-		  {
-			"name": "Star Rod",
-
-
-		  },
-		  {
-			"name": "Steelix",
-
-
-		  },
-		  {
-			"name": "Super Mushroom",
-
-
-		  },
-		  {
-			"name": "Super Scope",
-
-
-		  },
-		  {
-			"name": "Thwomp",
-
-
-		  },
-		  {
-			"name": "Toad",
-
-
-		  },
-		  {
-			"name": "Topi",
-
-
-		  },
-		  {
-			"name": "Totodile",
-
-
-		  },
-		  {
-			"name": "Waddle Dee",
-
-
-		  },
-		  {
-			"name": "Weezing",
-
-
-		  },
-		  {
-			"name": "Wobbuffet",
-
-
-		  },
-		  {
-			"name": "ZERO-ONE",
-
-
-		  },
-		  {
-			"name": "Bubbles",
-
-
-		  },
-		  {
-			"name": "Chansey",
-
-
-		  },
-		  {
-			"name": "Dixie Kong",
-
-
-		  },
-		  {
-			"name": "Eevee",
-
-
-		  },
-		  {
-			"name": "Eggplant Man",
-
-
-		  },
-		  {
-			"name": "Fighter Kirby",
-
-
-		  },
-		  {
-			"name": "Jeff",
-
-
-		  },
-		  {
-			"name": "Maruo Maruhige",
-
-
-		  },
-		  {
-			"name": "Misty",
-
-
-		  },
-		  {
-			"name": "Professor Oak",
-
-
-		  },
-		  {
-			"name": "Ray Mk II",
-
-
-		  },
-		  {
-			"name": "Red Shell",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 50,
-			"y": 50
-		  }
-		]
-	  },
-	  {
-		"name": "Any Main 1-P (No All-Star)",
-		"access_rules": ["classic_or_adventure_clear"],
-
-
-		"sections": [
-		  {
-			"name": "Ayumi Tachibana",
-
-
-		  },
-		  {
-			"name": "Banzai Bill",
-
-
-		  },
-		  {
-			"name": "Beam Sword",
-
-
-		  },
-		  {
-			"name": "Charizard",
-
-
-		  },
-		  {
-			"name": "Cleffa",
-
-
-		  },
-		  {
-			"name": "Electrode",
-
-
-		  },
-		  {
-			"name": "Fire Kirby",
-
-
-		  },
-		  {
-			"name": "Four Giants",
-
-
-		  },
-		  {
-			"name": "Freezie",
-
-
-		  },
-		  {
-			"name": "Goron",
-
-
-		  },
-		  {
-			"name": "Green Shell",
-
-
-		  },
-		  {
-			"name": "Koopa Paratroopa",
-
-
-		  },
-		  {
-			"name": "Like Like",
-
-
-		  },
-		  {
-			"name": "Love Giant",
-
-
-		  },
-		  {
-			"name": "Marill",
-
-
-		  },
-		  {
-			"name": "Master Sword",
-
-
-		  },
-		  {
-			"name": "Octorok",
-
-
-		  },
-		  {
-			"name": "Parasol",
-
-
-		  },
-		  {
-			"name": "Paula",
-
-
-		  },
-		  {
-			"name": "Pit",
-
-
-		  },
-		  {
-			"name": "Plum",
-
-
-		  },
-		  {
-			"name": "ReDead",
-
-
-		  },
-		  {
-			"name": "Screw Attack",
-
-
-		  },
-		  {
-			"name": "Staryu",
-
-
-		  },
-		  {
-			"name": "Vegetable",
-
-
-		  },
-		  {
-			"name": "Viruses",
-
-
-		  },
-		  {
-			"name": "Warp Star",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 100,
-			"y": 50
-		  }
-		]
-	  },
-	  {
-		"name": "Lottery Adventure-Classic Clear",
-		"access_rules": ["classic_and_adventure_clear"],
-
-
-		"sections": [
-		  {
-			"name": "Arwing",
-
-
-		  },
-		  {
-			"name": "Baby Mario",
-
-
-		  },
-		  {
-			"name": "Bayonette",
-
-
-		  },
-		  {
-			"name": "Chozo Statue",
-
-
-		  },
-		  {
-			"name": "Ditto",
-
-
-		  },
-		  {
-			"name": "Fountain of Dreams",
-
-
-		  },
-		  {
-			"name": "Gooey",
-
-
-		  },
-		  {
-			"name": "Great Fox",
-
-
-		  },
-		  {
-			"name": "Hammer",
-
-
-		  },
-		  {
-			"name": "King Dedede",
-
-
-		  },
-		  {
-			"name": "Moon",
-
-
-		  },
-		  {
-			"name": "Pak E. Derm",
-
-
-		  },
-		  {
-			"name": "Pidgit",
-
-
-		  },
-		  {
-			"name": "Pikmin",
-
-
-		  },
-		  {
-			"name": "Poké Ball",
-
-
-		  },
-		  {
-			"name": "Pokémon Stadium",
-
-
-		  },
-		  {
-			"name": "Princess Peach's Castle",
-
-
-		  },
-		  {
-			"name": "Shy Guys",
-
-
-		  },
-		  {
-			"name": "Suicune",
-
-
-		  },
-		  {
-			"name": "Tingle",
-
-
-		  },
-		  {
-			"name": "Turtle",
-
-
-		  },
-		  {
-			"name": "Venusaur",
-
-
-		  },
-		  {
-			"name": "Whispy Woods",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 150,
-			"y": 50
-		  }
-		]
-	  },
-	  {
-		"name": "Lottery 200 Vs. Matches",
-		"access_rules": ["vs_matches_5"],
-
-
-		"sections": [
-		  {
-			"name": "Andross",
-
-
-		  },
-		  {
-			"name": "Annie",
-
-
-		  },
-		  {
-			"name": "Cloaking Device",
-
-
-		  },
-		  {
-			"name": "Kensuke Kimachi",
-
-
-		  },
-		  {
-			"name": "Lugia",
-
-
-		  },
-		  {
-			"name": "Megavitamins",
-
-
-		  },
-		  {
-			"name": "Meta-Knight",
-
-
-		  },
-		  {
-			"name": "Peppy Hare",
-
-
-		  },
-		  {
-			"name": "Poison Mushroom",
-
-
-		  },
-		  {
-			"name": "Polar Bear",
-
-
-		  },
-		  {
-			"name": "Poo",
-
-
-		  },
-		  {
-			"name": "Samurai Goroh",
-
-
-		  },
-		  {
-			"name": "Stanley",
-
-
-		  },
-		  {
-			"name": "Togepi",
-
-
-		  },
-		  {
-			"name": "Totakeke",
-
-
-		  },
-		  {
-			"name": "Vacuum Luigi",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 200,
-			"y": 50
-		  }
-		]
-	  },
-	  {
-		"name": "Lottery Secret Characters",
-		"access_rules": ["secret_characters_unlocked"],
-
-
-		"sections": [
-		  {
-			"name": "Alpha",
-
-
-		  },
-		  {
-			"name": "Articuno",
-
-
-		  },
-		  {
-			"name": "Boo",
-
-
-		  },
-		  {
-			"name": "Hate Giant",
-
-
-		  },
-		  {
-			"name": "Ho-Oh",
-
-
-		  },
-		  {
-			"name": "King K. Rool",
-
-
-		  },
-		  {
-			"name": "Moltres",
-
-
-		  },
-		  {
-			"name": "Ocarina of Time",
-
-
-		  },
-		  {
-			"name": "Raikou",
-
-
-		  },
-		  {
-			"name": "Zapdos",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 250,
-			"y": 50
-		  }
-		]
-	  },
-	  {
-		"name": "Lottery 250 Trophies",
-		"access_rules": ["trophies_250"],
-
-
-		"sections": [
-		  {
-			"name": "GCN",
-
-
-		  },
-		  {
-			"name": "Koopa Clown Car",
-
-
-		  },
-		  {
-			"name": "Raccoon Mario",
-
-
-		  },
-		  {
-			"name": "Waluigi",
-
-
-		  }
-		],
-		"map_locations": [
-		  {
-			"map": "trophy_collection",
-			"x": 300,
-			"y": 50
+      {
+        "name": "Lottery Base",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Andross (64)"
+          },
+          {
+            "name": "Baby Bowser"
+          },
+          {
+            "name": "Ball Kirby"
+          },
+          {
+            "name": "Balloon Fighter"
+          },
+          {
+            "name": "Barrel"
+          },
+          {
+            "name": "Barrel Cannon"
+          },
+          {
+            "name": "Bellossom"
+          },
+          {
+            "name": "Birdo"
+          },
+          {
+            "name": "Blastoise"
+          },
+          {
+            "name": "Bob-omb"
+          },
+          {
+            "name": "Bucket"
+          },
+          {
+            "name": "Bulbasaur"
+          },
+          {
+            "name": "Capsule"
+          },
+          {
+            "name": "Chikorita"
+          },
+          {
+            "name": "Clefairy"
+          },
+          {
+            "name": "Coin"
+          },
+          {
+            "name": "Crate"
+          },
+          {
+            "name": "Crobat"
+          },
+          {
+            "name": "Cyndaquil"
+          },
+          {
+            "name": "Daisy"
+          },
+          {
+            "name": "Donbe & Hikari"
+          },
+          {
+            "name": "Dr. Stewart"
+          },
+          {
+            "name": "Dr. Wright"
+          },
+          {
+            "name": "Ducks"
+          },
+          {
+            "name": "Egg"
+          },
+          {
+            "name": "Excitebike"
+          },
+          {
+            "name": "Fan"
+          },
+          {
+            "name": "Fire Flower"
+          },
+          {
+            "name": "Flipper"
+          },
+          {
+            "name": "Goldeen"
+          },
+          {
+            "name": "Heracross"
+          },
+          {
+            "name": "Heririn"
+          },
+          {
+            "name": "Home-Run Bat"
+          },
+          {
+            "name": "Igglybuff"
+          },
+          {
+            "name": "Jody Summer"
+          },
+          {
+            "name": "Kirby Hat 1"
+          },
+          {
+            "name": "Kirby Hat 2"
+          },
+          {
+            "name": "Kirby Hat 3"
+          },
+          {
+            "name": "Klap Trap"
+          },
+          {
+            "name": "Koopa Troopa"
+          },
+          {
+            "name": "Lakitu"
+          },
+          {
+            "name": "Metal Mario"
+          },
+          {
+            "name": "Metroid"
+          },
+          {
+            "name": "Monster"
+          },
+          {
+            "name": "Mr. Saturn"
+          },
+          {
+            "name": "Party Ball"
+          },
+          {
+            "name": "Poliwhirl"
+          },
+          {
+            "name": "Porygon2"
+          },
+          {
+            "name": "Racing Kart"
+          },
+          {
+            "name": "Raphael Raven"
+          },
+          {
+            "name": "Ray Gun"
+          },
+          {
+            "name": "Rick"
+          },
+          {
+            "name": "Ridley"
+          },
+          {
+            "name": "Ryota Hayami"
+          },
+          {
+            "name": "Scizor"
+          },
+          {
+            "name": "Slippy Toad"
+          },
+          {
+            "name": "Snorlax"
+          },
+          {
+            "name": "Squirtle"
+          },
+          {
+            "name": "Starman"
+          },
+          {
+            "name": "Starman (EarthBound)"
+          },
+          {
+            "name": "Star Rod"
+          },
+          {
+            "name": "Steelix"
+          },
+          {
+            "name": "Super Mushroom"
+          },
+          {
+            "name": "Super Scope"
+          },
+          {
+            "name": "Thwomp"
+          },
+          {
+            "name": "Toad"
+          },
+          {
+            "name": "Topi"
+          },
+          {
+            "name": "Totodile"
+          },
+          {
+            "name": "Waddle Dee"
+          },
+          {
+            "name": "Weezing"
+          },
+          {
+            "name": "Wobbuffet"
+          },
+          {
+            "name": "ZERO-ONE"
+          },
+          {
+            "name": "Bubbles"
+          },
+          {
+            "name": "Chansey"
+          },
+          {
+            "name": "Dixie Kong"
+          },
+          {
+            "name": "Eevee"
+          },
+          {
+            "name": "Eggplant Man"
+          },
+          {
+            "name": "Fighter Kirby"
+          },
+          {
+            "name": "Jeff"
+          },
+          {
+            "name": "Maruo Maruhige"
+          },
+          {
+            "name": "Misty"
+          },
+          {
+            "name": "Professor Oak"
+          },
+          {
+            "name": "Ray Mk II"
+          },
+          {
+            "name": "Red Shell"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 50,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Any Main 1-P (No All-Star)",
+        "access_rules": ["classic_or_adventure_clear"],
+        "sections": [
+          {
+            "name": "Ayumi Tachibana"
+          },
+          {
+            "name": "Banzai Bill"
+          },
+          {
+            "name": "Beam Sword"
+          },
+          {
+            "name": "Charizard"
+          },
+          {
+            "name": "Cleffa"
+          },
+          {
+            "name": "Electrode"
+          },
+          {
+            "name": "Fire Kirby"
+          },
+          {
+            "name": "Four Giants"
+          },
+          {
+            "name": "Freezie"
+          },
+          {
+            "name": "Goron"
+          },
+          {
+            "name": "Green Shell"
+          },
+          {
+            "name": "Koopa Paratroopa"
+          },
+          {
+            "name": "Like Like"
+          },
+          {
+            "name": "Love Giant"
+          },
+          {
+            "name": "Marill"
+          },
+          {
+            "name": "Master Sword"
+          },
+          {
+            "name": "Octorok"
+          },
+          {
+            "name": "Parasol"
+          },
+          {
+            "name": "Paula"
+          },
+          {
+            "name": "Pit"
+          },
+          {
+            "name": "Plum"
+          },
+          {
+            "name": "ReDead"
+          },
+          {
+            "name": "Screw Attack"
+          },
+          {
+            "name": "Staryu"
+          },
+          {
+            "name": "Vegetable"
+          },
+          {
+            "name": "Viruses"
+          },
+          {
+            "name": "Warp Star"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 100,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery Adventure-Classic Clear",
+        "access_rules": ["classic_and_adventure_clear"],
+        "sections": [
+          {
+            "name": "Arwing"
+          },
+          {
+            "name": "Baby Mario"
+          },
+          {
+            "name": "Bayonette"
+          },
+          {
+            "name": "Chozo Statue"
+          },
+          {
+            "name": "Ditto"
+          },
+          {
+            "name": "Fountain of Dreams"
+          },
+          {
+            "name": "Gooey"
+          },
+          {
+            "name": "Great Fox"
+          },
+          {
+            "name": "Hammer"
+          },
+          {
+            "name": "King Dedede"
+          },
+          {
+            "name": "Moon"
+          },
+          {
+            "name": "Pak E. Derm"
+          },
+          {
+            "name": "Pidgit"
+          },
+          {
+            "name": "Pikmin"
+          },
+          {
+            "name": "Poké Ball"
+          },
+          {
+            "name": "Pokémon Stadium"
+          },
+          {
+            "name": "Princess Peach's Castle"
+          },
+          {
+            "name": "Shy Guys"
+          },
+          {
+            "name": "Suicune"
+          },
+          {
+            "name": "Tingle"
+          },
+          {
+            "name": "Turtle"
+          },
+          {
+            "name": "Venusaur"
+          },
+          {
+            "name": "Whispy Woods"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 150,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery 200 Vs. Matches",
+        "access_rules": ["vs_matches_5"],
+        "sections": [
+          {
+            "name": "Andross"
+          },
+          {
+            "name": "Annie"
+          },
+          {
+            "name": "Cloaking Device"
+          },
+          {
+            "name": "Kensuke Kimachi"
+          },
+          {
+            "name": "Lugia"
+          },
+          {
+            "name": "Megavitamins"
+          },
+          {
+            "name": "Meta-Knight"
+          },
+          {
+            "name": "Peppy Hare"
+          },
+          {
+            "name": "Poison Mushroom"
+          },
+          {
+            "name": "Polar Bear"
+          },
+          {
+            "name": "Poo"
+          },
+          {
+            "name": "Samurai Goroh"
+          },
+          {
+            "name": "Stanley"
+          },
+          {
+            "name": "Togepi"
+          },
+          {
+            "name": "Totakeke"
+          },
+          {
+            "name": "Vacuum Luigi"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 200,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery Secret Characters",
+        "access_rules": ["secret_characters_unlocked"],
+        "sections": [
+          {
+            "name": "Alpha"
+          },
+          {
+            "name": "Articuno"
+          },
+          {
+            "name": "Boo"
+          },
+          {
+            "name": "Hate Giant"
+          },
+          {
+            "name": "Ho-Oh"
+          },
+          {
+            "name": "King K. Rool"
+          },
+          {
+            "name": "Moltres"
+          },
+          {
+            "name": "Ocarina of Time"
+          },
+          {
+            "name": "Raikou"
+          },
+          {
+            "name": "Zapdos"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 250,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery 250 Trophies",
+        "access_rules": ["trophies_250"],
+        "sections": [
+          {
+            "name": "GCN"
+          },
+          {
+            "name": "Koopa Clown Car"
+          },
+          {
+            "name": "Raccoon Mario"
+          },
+          {
+            "name": "Waluigi"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 300,
+            "y": 50
           }
         ]
       }

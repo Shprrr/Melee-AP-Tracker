@@ -66,7 +66,7 @@
             "name": "All Stages + Secret Characters",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["group_unique_stages_11", "Jigglypuff", "Dr. Mario", "Pichu", "Falco", "Marth", "Young Link", "Ganondorf", "Mewtwo", "Luigi", "Roy", "Mr. Game & Watch"]
+            "access_rules": ["$GroupUniqueStages11", "Jigglypuff", "Dr. Mario", "Pichu", "Falco", "Marth", "Young Link", "Ganondorf", "Mewtwo", "Luigi", "Roy", "Mr. Game & Watch"]
           },
           {
             "name": "Unlock Luigi, Jigglypuff, Mewtwo, Mr. Game & Watch, and Marth",

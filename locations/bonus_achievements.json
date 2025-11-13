@@ -11,145 +11,145 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Dedicated Specialist",
+            "name": "Dedicated Specialist"
           },
           {
-            "name": "One-Two Punch",
+            "name": "One-Two Punch"
           },
           {
-            "name": "First Strike",
+            "name": "First Strike"
           },
           {
-            "name": "150% Damage",
+            "name": "150% Damage"
           },
           {
-            "name": "200% Damage",
+            "name": "200% Damage"
           },
           {
-            "name": "250% Damage",
+            "name": "250% Damage"
           },
           {
-            "name": "300% Damage",
+            "name": "300% Damage"
           },
           {
-            "name": "350% Damage",
+            "name": "350% Damage"
           },
           {
-            "name": "Berserker",
+            "name": "Berserker"
           },
           {
-            "name": "Smash King",
+            "name": "Smash King"
           },
           {
-            "name": "Smash Maniac",
+            "name": "Smash Maniac"
           },
           {
-            "name": "Smash-less",
+            "name": "Smash-less"
           },
           {
-            "name": "Specialist",
+            "name": "Specialist"
           },
           {
-            "name": "Full Power",
+            "name": "Full Power"
           },
           {
-            "name": "Heavy Damage",
+            "name": "Heavy Damage"
           },
           {
-            "name": "Sniper",
+            "name": "Sniper"
           },
           {
-            "name": "Brawler",
+            "name": "Brawler"
           },
           {
-            "name": "Precise Aim",
+            "name": "Precise Aim"
           },
           {
-            "name": "Pummeler",
+            "name": "Pummeler"
           },
           {
-            "name": "Fists of Fury",
+            "name": "Fists of Fury"
           },
           {
-            "name": "Opportunist",
+            "name": "Opportunist"
           },
           {
-            "name": "Spectator",
+            "name": "Spectator"
           },
           {
-            "name": "KO Artist",
+            "name": "KO Artist"
           },
           {
-            "name": "KO Master",
+            "name": "KO Master"
           },
           {
-            "name": "Offensive Artist",
+            "name": "Offensive Artist"
           },
           {
-            "name": "Offensive Master",
+            "name": "Offensive Master"
           },
           {
-            "name": "Cuddly Bear",
+            "name": "Cuddly Bear"
           },
           {
-            "name": "Punching Bag",
+            "name": "Punching Bag"
           },
           {
-            "name": "Stale Moves",
+            "name": "Stale Moves"
           },
           {
-            "name": "Blind Eye",
+            "name": "Blind Eye"
           },
           {
-            "name": "Crowd Favorite",
+            "name": "Crowd Favorite"
           },
           {
-            "name": "Master of Suspense",
+            "name": "Master of Suspense"
           },
           {
-            "name": "Lost in Space",
+            "name": "Lost in Space"
           },
           {
-            "name": "Lost Luggage",
+            "name": "Lost Luggage"
           },
           {
-            "name": "Bully",
+            "name": "Bully"
           },
           {
-            "name": "Coward",
+            "name": "Coward"
           },
           {
-            "name": "In the Fray",
+            "name": "In the Fray"
           },
           {
-            "name": "Friendly Foe",
+            "name": "Friendly Foe"
           },
           {
-            "name": "Center Stage",
+            "name": "Center Stage"
           },
           {
-            "name": "Pacifist",
+            "name": "Pacifist"
           },
           {
-            "name": "Moment of Silence",
+            "name": "Moment of Silence"
           },
           {
-            "name": "Impervious",
+            "name": "Impervious"
           },
           {
-            "name": "Immortal",
+            "name": "Immortal"
           },
           {
-            "name": "Switzerland",
+            "name": "Switzerland"
           },
           {
-            "name": "Predator",
+            "name": "Predator"
           },
           {
-            "name": "Solar Being",
+            "name": "Solar Being"
           },
           {
-            "name": "Stalker",
+            "name": "Stalker"
           }
         ],
         "map_locations": [
@@ -165,188 +165,142 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Exceptional Aim",
-
+            "name": "Exceptional Aim"
           },
           {
-            "name": "Perfect Aim",
-
+            "name": "Perfect Aim"
           },
           {
-            "name": "All Ground",
-
+            "name": "All Ground"
           },
           {
-            "name": "All Aerial",
-
+            "name": "All Aerial"
           },
           {
-            "name": "Bird of Prey",
-
+            "name": "Bird of Prey"
           },
           {
-            "name": "Combo King",
-
+            "name": "Combo King"
           },
           {
-            "name": "Juggler",
-
+            "name": "Juggler"
           },
           {
-            "name": "Backstabber",
-
+            "name": "Backstabber"
           },
           {
-            "name": "Sweeper",
-
+            "name": "Sweeper"
           },
           {
-            "name": "Clean Sweep",
-
+            "name": "Clean Sweep"
           },
           {
-            "name": "Meteor Smash",
-
+            "name": "Meteor Smash"
           },
           {
-            "name": "Meteor Clear",
-
+            "name": "Meteor Clear"
           },
           {
-            "name": "Aerialist",
-
+            "name": "Aerialist"
           },
           {
-            "name": "Acrobat",
-
+            "name": "Acrobat"
           },
           {
-            "name": "Cement Shoes",
-
+            "name": "Cement Shoes"
           },
           {
-            "name": "Head Banger",
-
+            "name": "Head Banger"
           },
           {
-            "name": "Elbow Room",
-
+            "name": "Elbow Room"
           },
           {
-            "name": "Eagle",
-
+            "name": "Eagle"
           },
           {
-            "name": "Compass Tosser",
-
+            "name": "Compass Tosser"
           },
           {
-            "name": "Throw Down",
-
+            "name": "Throw Down"
           },
           {
-            "name": "Stiff Knees",
-
+            "name": "Stiff Knees"
           },
           {
-            "name": "Run, Don't Walk",
-
+            "name": "Run, Don't Walk"
           },
           {
-            "name": "Ambler",
-
+            "name": "Ambler"
           },
           {
-            "name": "No Hurry",
-
+            "name": "No Hurry"
           },
           {
-            "name": "Marathon Man",
-
+            "name": "Marathon Man"
           },
           {
-            "name": "Rock Steady",
-
+            "name": "Rock Steady"
           },
           {
-            "name": "Pratfaller",
-
+            "name": "Pratfaller"
           },
           {
-            "name": "Face Planter",
-
+            "name": "Face Planter"
           },
           {
-            "name": "Twinkle Toes",
-
+            "name": "Twinkle Toes"
           },
           {
-            "name": "Floor Diver",
-
+            "name": "Floor Diver"
           },
           {
-            "name": "No R 4 U",
-
+            "name": "No R 4 U"
           },
           {
-            "name": "Floored",
-
+            "name": "Floored"
           },
           {
-            "name": "Life on the Edge",
-
+            "name": "Life on the Edge"
           },
           {
-            "name": "Poser",
-
+            "name": "Poser"
           },
           {
-            "name": "Poser Power",
-
+            "name": "Poser Power"
           },
           {
-            "name": "Instant Poser",
-
+            "name": "Instant Poser"
           },
           {
-            "name": "Button Holder",
-
+            "name": "Button Holder"
           },
           {
-            "name": "Shield Stupidity",
-
+            "name": "Shield Stupidity"
           },
           {
-            "name": "Shield Saver",
-
+            "name": "Shield Saver"
           },
           {
-            "name": "Skid Master",
-
+            "name": "Skid Master"
           },
           {
-            "name": "Rock Climber",
-
+            "name": "Rock Climber"
           },
           {
-            "name": "Edge Hog",
-
+            "name": "Edge Hog"
           },
           {
-            "name": "Cliffhanger",
-
+            "name": "Cliffhanger"
           },
           {
-            "name": "Shattered Shield",
-
+            "name": "Shattered Shield"
           },
           {
-            "name": "Statue",
-
+            "name": "Statue"
           },
           {
-            "name": "Never Look Back",
-
+            "name": "Never Look Back"
           }
         ],
         "map_locations": [
@@ -360,167 +314,126 @@
       {
         "name": "KO Type Bonuses",
         "access_rules": [],
-
         "sections": [
           {
-            "name": "Sacrificial KO",
-
+            "name": "Sacrificial KO"
           },
           {
-            "name": "Avenger KO",
-
+            "name": "Avenger KO"
           },
           {
-            "name": "Double KO",
-
+            "name": "Double KO"
           },
           {
-            "name": "Triple KO",
-
+            "name": "Triple KO"
           },
           {
-            "name": "Dead-Weight KO",
-
+            "name": "Dead-Weight KO"
           },
           {
-            "name": "Kiss-the-Floor KO",
-
+            "name": "Kiss-the-Floor KO"
           },
           {
-            "name": "Poser KO",
-
+            "name": "Poser KO"
           },
           {
-            "name": "Cheap KO",
-
+            "name": "Cheap KO"
           },
           {
-            "name": "Bank-Shot KO",
-
+            "name": "Bank-Shot KO"
           },
           {
-            "name": "Star KO",
-
+            "name": "Star KO"
           },
           {
-            "name": "Wimpy KO",
-
+            "name": "Wimpy KO"
           },
           {
-            "name": "Timely KO",
-
+            "name": "Timely KO"
           },
           {
-            "name": "Special KO",
-
+            "name": "Special KO"
           },
           {
-            "name": "Hangman's KO",
-
+            "name": "Hangman's KO"
           },
           {
-            "name": "KO 64",
-
+            "name": "KO 64"
           },
           {
-            "name": "Bubble-Blast KO",
-
+            "name": "Bubble-Blast KO"
           },
           {
-            "name": "Bull's-eye KO",
-
+            "name": "Bull's-eye KO"
           },
           {
-            "name": "Carrier KO",
-
+            "name": "Carrier KO"
           },
           {
-            "name": "Assisted KO",
-
+            "name": "Assisted KO"
           },
           {
-            "name": "Rocket KO",
-
+            "name": "Rocket KO"
           },
           {
-            "name": "Tiny KO",
-
+            "name": "Tiny KO"
           },
           {
-            "name": "Invisible KO",
-
+            "name": "Invisible KO"
           },
           {
-            "name": "Giant KO",
-
+            "name": "Giant KO"
           },
           {
-            "name": "Metal KO",
-
+            "name": "Metal KO"
           },
           {
-            "name": "Freezie KO",
-
+            "name": "Freezie KO"
           },
           {
-            "name": "Flipper KO",
-
+            "name": "Flipper KO"
           },
           {
-            "name": "Invincible KO",
-
+            "name": "Invincible KO"
           },
           {
-            "name": "Capsule KO",
-
+            "name": "Capsule KO"
           },
           {
-            "name": "Warp-Star KO",
-
+            "name": "Warp-Star KO"
           },
           {
-            "name": "Bunny-hood Blast",
-
+            "name": "Bunny-hood Blast"
           },
           {
-            "name": "Paratroopa KO",
-
+            "name": "Paratroopa KO"
           },
           {
-            "name": "ReDead KO",
-
+            "name": "ReDead KO"
           },
           {
-            "name": "Like Like KO",
-
+            "name": "Like Like KO"
           },
           {
-            "name": "Octorok KO",
-
+            "name": "Octorok KO"
           },
           {
-            "name": "Topi KO",
-
+            "name": "Topi KO"
           },
           {
-            "name": "Polar Bear KO",
-
+            "name": "Polar Bear KO"
           },
           {
-            "name": "Shy Guy KO",
-
+            "name": "Shy Guy KO"
           },
           {
-            "name": "Pokémon KO",
-
+            "name": "Pokémon KO"
           },
           {
-            "name": "Goomba KO",
-
+            "name": "Goomba KO"
           },
           {
-            "name": "Koopa KO",
-
+            "name": "Koopa KO"
           }
         ],
         "map_locations": [
@@ -536,124 +449,94 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Item Hog",
-
+            "name": "Item Hog"
           },
           {
-            "name": "Item Collector",
-
+            "name": "Item Collector"
           },
           {
-            "name": "Item-less",
-
+            "name": "Item-less"
           },
           {
-            "name": "Item Specialist",
-
+            "name": "Item Specialist"
           },
           {
-            "name": "Triple Items",
-
+            "name": "Triple Items"
           },
           {
-            "name": "Lucky Threes",
-
+            "name": "Lucky Threes"
           },
           {
-            "name": "Jackpot",
-
+            "name": "Jackpot"
           },
           {
-            "name": "Pitcher",
-
+            "name": "Pitcher"
           },
           {
-            "name": "Butterfingers",
-
+            "name": "Butterfingers"
           },
           {
-            "name": "All Thumbs",
-
+            "name": "All Thumbs"
           },
           {
-            "name": "Weight Lifter",
-
+            "name": "Weight Lifter"
           },
           {
-            "name": "Item Catcher",
-
+            "name": "Item Catcher"
           },
           {
-            "name": "Reciprocator",
-
+            "name": "Reciprocator"
           },
           {
-            "name": "Item Self-Destruct",
-
+            "name": "Item Self-Destruct"
           },
           {
-            "name": "Item Chucker",
-
+            "name": "Item Chucker"
           },
           {
-            "name": "Item Smasher",
-
+            "name": "Item Smasher"
           },
           {
-            "name": "Beam Swordsman",
-
+            "name": "Beam Swordsman"
           },
           {
-            "name": "Home-Run King",
-
+            "name": "Home-Run King"
           },
           {
-            "name": "Laser Marksman",
-
+            "name": "Laser Marksman"
           },
           {
-            "name": "Flame Thrower",
-
+            "name": "Flame Thrower"
           },
           {
-            "name": "Headless Hammer",
-
+            "name": "Headless Hammer"
           },
           {
-            "name": "Super Spy",
-
+            "name": "Super Spy"
           },
           {
-            "name": "Bob-omb's Away",
-
+            "name": "Bob-omb's Away"
           },
           {
-            "name": "Bob-omb Squad",
-
+            "name": "Bob-omb Squad"
           },
           {
-            "name": "Mr. Saturn Fan",
-
+            "name": "Mr. Saturn Fan"
           },
           {
-            "name": "Mrs. Saturn",
-
+            "name": "Mrs. Saturn"
           },
           {
-            "name": "Saturn Siblings",
-
+            "name": "Saturn Siblings"
           },
           {
-            "name": "Saturn Ringer",
-
+            "name": "Saturn Ringer"
           },
           {
-            "name": "Minimalist",
-
+            "name": "Minimalist"
           },
           {
-            "name": "Materialist",
-
+            "name": "Materialist"
           }
         ],
         "map_locations": [
@@ -669,248 +552,187 @@
         "access_rules": [],
         "sections": [
           {
-            "name": "Classic Clear",
-
+            "name": "Classic Clear"
           },
           {
-            "name": "Adventure Clear",
-
+            "name": "Adventure Clear"
           },
           {
-            "name": "All-Star Clear",
-
+            "name": "All-Star Clear"
           },
           {
-            "name": "Giga Bowser KO",
-
+            "name": "Giga Bowser KO"
           },
           {
-            "name": "Crazy Hand KO",
-
+            "name": "Crazy Hand KO"
           },
           {
-            "name": "Luigi KO",
-
+            "name": "Luigi KO"
           },
           {
-            "name": "Giant Kirby KO",
-
+            "name": "Giant Kirby KO"
           },
           {
-            "name": "Metal Bros. KO",
-
+            "name": "Metal Bros. KO"
           },
           {
-            "name": "Collector",
-
+            "name": "Collector"
           },
           {
-            "name": "Target Master",
-
+            "name": "Target Master"
           },
           {
-            "name": "Hobbyist",
-
+            "name": "Hobbyist"
           },
           {
-            "name": "Link Master",
-
+            "name": "Link Master"
           },
           {
-            "name": "Continuation",
-
+            "name": "Continuation"
           },
           {
-            "name": "Speed Demon",
-
+            "name": "Speed Demon"
           },
           {
-            "name": "Melee Master",
-
+            "name": "Melee Master"
           },
           {
-            "name": "Very Hard Clear",
-
+            "name": "Very Hard Clear"
           },
           {
-            "name": "No-Miss Clear",
-
+            "name": "No-Miss Clear"
           },
           {
-            "name": "Half-Minute Man",
-
+            "name": "Half-Minute Man"
           },
           {
-            "name": "Lucky Number Seven",
-
+            "name": "Lucky Number Seven"
           },
           {
-            "name": "Last Second",
-
+            "name": "Last Second"
           },
           {
-            "name": "Environmental Hazard",
-
+            "name": "Environmental Hazard"
           },
           {
-            "name": "Angelic",
-
+            "name": "Angelic"
           },
           {
-            "name": "Magnified Finish",
-
+            "name": "Magnified Finish"
           },
           {
-            "name": "Fighter Stance",
-
+            "name": "Fighter Stance"
           },
           {
-            "name": "Mystic",
-
+            "name": "Mystic"
           },
           {
-            "name": "Shooting Star",
-
+            "name": "Shooting Star"
           },
           {
-            "name": "Foresight",
-
+            "name": "Foresight"
           },
           {
-            "name": "First to Fall",
-
+            "name": "First to Fall"
           },
           {
-            "name": "Cliff Diver",
-
+            "name": "Cliff Diver"
           },
           {
-            "name": "Quitter",
-
+            "name": "Quitter"
           },
           {
-            "name": "Shameful Fall",
-
+            "name": "Shameful Fall"
           },
           {
-            "name": "World Traveler",
-
+            "name": "World Traveler"
           },
           {
-            "name": "Ground Pounded",
-
+            "name": "Ground Pounded"
           },
           {
-            "name": "Vegetarian",
-
+            "name": "Vegetarian"
           },
           {
-            "name": "Heartthrob",
-
+            "name": "Heartthrob"
           },
           {
-            "name": "Invincible Finish",
-
+            "name": "Invincible Finish"
           },
           {
-            "name": "Gardener Finish",
-
+            "name": "Gardener Finish"
           },
           {
-            "name": "Flower Finish",
-
+            "name": "Flower Finish"
           },
           {
-            "name": "Super Scoper",
-
+            "name": "Super Scoper"
           },
           {
-            "name": "Screwed Up",
-
+            "name": "Screwed Up"
           },
           {
-            "name": "Mycologist",
-
+            "name": "Mycologist"
           },
           {
-            "name": "Mario Maniac",
-
+            "name": "Mario Maniac"
           },
           {
-            "name": "Connoisseur",
-
+            "name": "Connoisseur"
           },
           {
-            "name": "Gourmet",
-
+            "name": "Gourmet"
           },
           {
-            "name": "Battering Ram",
-
+            "name": "Battering Ram"
           },
           {
-            "name": "Straight Shooter",
-
+            "name": "Straight Shooter"
           },
           {
-            "name": "Wimp",
-
+            "name": "Wimp"
           },
           {
-            "name": "Shape-Shifter",
-
+            "name": "Shape-Shifter"
           },
           {
-            "name": "Chuck Wagon",
-
+            "name": "Chuck Wagon"
           },
           {
-            "name": "Parasol Finish",
-
+            "name": "Parasol Finish"
           },
           {
-            "name": "Last Place",
-
+            "name": "Last Place"
           },
           {
-            "name": "Wire to Wire",
-
+            "name": "Wire to Wire"
           },
           {
-            "name": "Whipping Boy",
-
+            "name": "Whipping Boy"
           },
           {
-            "name": "Frequent Faller",
-
+            "name": "Frequent Faller"
           },
           {
-            "name": "First Place",
-
+            "name": "First Place"
           },
           {
-            "name": "Peaceful Warrior",
-
+            "name": "Peaceful Warrior"
           },
           {
-            "name": "Down, But Not Out",
-
+            "name": "Down, But Not Out"
           },
           {
-            "name": "Merciful Master",
-
+            "name": "Merciful Master"
           },
           {
-            "name": "Fall Guy",
-
+            "name": "Fall Guy"
           },
           {
-            "name": "Self-Destructor",
-
+            "name": "Self-Destructor"
           },
           {
-            "name": "Master of Disaster",
-
+            "name": "Master of Disaster"
           }
         ],
         "map_locations": [

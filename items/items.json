@@ -284,7 +284,7 @@
         "name": "Progressive Event Match",
         "type": "progressive_toggle",
         "initial_stage_idx": 0,
-        "initial_active_state": "true",
+        "initial_active_state": true,
         "stages": [
             {
                 "name": "Initial Event Pool",
@@ -351,7 +351,7 @@
         "name": "Progressive Lottery Pool",
         "type": "progressive_toggle",
         "initial_stage_idx": 0,
-        "initial_active_state": "true",
+        "initial_active_state": true,
         "stages": [
             {
                 "name": "Initial Lottery Pool",
@@ -454,7 +454,7 @@
         "name": "Trophies",
         "type": "consumable",
         "max_quantity": 293,
-        "img": "images/items/Trophies.png",
+        "img": "images/items/Trophy Base.png",
         "img_mods": "",
         "codes": "Trophies"
     }

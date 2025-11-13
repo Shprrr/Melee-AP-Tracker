@@ -9,67 +9,45 @@
       {
         "name": "Starting Characters",
         "access_rules": [],
-
-
         "sections": [
           {
             "name": "Mario",
-    
-    
             "access_rules": ["Mario"]
           },
           {
             "name": "Donkey Kong",
-    
-    
             "access_rules": ["Donkey Kong"]
           },
           {
             "name": "Link",
-    
-    
             "access_rules": ["Link"]
           },
           {
             "name": "Samus",
-    
-    
             "access_rules": ["Samus"]
           },
           {
             "name": "Yoshi",
-    
-    
             "access_rules": ["Yoshi"]
           },
           {
             "name": "Kirby",
-    
-    
             "access_rules": ["Kirby"]
           },
           {
             "name": "Fox",
-    
-    
             "access_rules": ["Fox"]
           },
           {
             "name": "Pikachu",
-    
-    
             "access_rules": ["Pikachu"]
           },
           {
             "name": "Ness",
-    
-    
             "access_rules": ["Ness"]
           },
           {
             "name": "Captain Falcon",
-    
-    
             "access_rules": ["Captain Falcon"]
           }
         ],
@@ -84,97 +62,65 @@
       {
         "name": "Secret Characters",
         "access_rules": [],
-
-
         "sections": [
           {
             "name": "Bowser",
-    
-    
             "access_rules": ["Bowser"]
           },
           {
             "name": "Peach",
-    
-    
             "access_rules": ["Peach"]
           },
           {
             "name": "Ice Climbers",
-    
-    
             "access_rules": ["Ice Climbers"]
           },
           {
             "name": "Zelda",
-    
-    
             "access_rules": ["Zelda"]
           },
           {
             "name": "Luigi",
-    
-    
             "access_rules": ["Luigi"]
           },
           {
             "name": "Jigglypuff",
-    
-    
             "access_rules": ["Jigglypuff"]
           },
           {
             "name": "Mewtwo",
-    
-    
             "access_rules": ["Mewtwo"]
           },
           {
             "name": "Mr. Game & Watch",
-    
-    
             "access_rules": ["Mr. Game & Watch"]
           },
           {
             "name": "Marth",
-    
-    
             "access_rules": ["Marth"]
           },
           {
             "name": "Roy",
-    
-    
             "access_rules": ["Roy"]
           },
           {
             "name": "Dr. Mario",
-    
-    
             "access_rules": ["Dr. Mario"]
           },
           {
             "name": "Ganondorf",
-    
-    
             "access_rules": ["Ganondorf"]
           },
           {
             "name": "Falco",
-    
-    
             "access_rules": ["Falco"]
           },
           {
             "name": "Young Link",
-    
-    
             "access_rules": ["Young Link"]
           },
           {
             "name": "Pichu",
-    
-    
             "access_rules": ["Pichu"]
           }
         ],
@@ -189,26 +135,18 @@
       {
         "name": "Target Test Challenges",
         "access_rules": [],
-
-
         "sections": [
           {
             "name": "All Characters, Sub 12:30 Total Time",
-    
-    
-            "access_rules": ["group_unique_characters_25"]
+            "access_rules": ["$GroupUniqueCharacters25"]
           },
           {
             "name": "All Characters",
-    
-    
-            "access_rules": ["group_unique_characters_25"]
+            "access_rules": ["$GroupUniqueCharacters25"]
           },
           {
             "name": "All Characters, Sub 25 Minutes Total Time",
-    
-    
-            "access_rules": ["group_unique_characters_25"]
+            "access_rules": ["$GroupUniqueCharacters25"]
           }
         ],
         "map_locations": [

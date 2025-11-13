@@ -44,7 +44,7 @@
             "name": "Young Link Unlock Match",
             "chest_unopened_img": "images/chests/character_uncollected.png",
             "chest_opened_img": "images/chests/character_collected.png",
-            "access_rules": ["group_unique_characters_10"]
+            "access_rules": ["$GroupUniqueCharacters10"]
           },
           {
             "name": "Ganondorf Unlock Match",
@@ -76,11 +76,11 @@
             "access_rules": ["Dr. Mario", "Mario", "Luigi", "Bowser", "Peach", "Yoshi", "Donkey Kong", "Captain Falcon", "Ganondorf", "Falco", "Fox", "Ness", "Ice Climbers", "Kirby", "Samus", "Zelda", "Link", "Young Link", "Pichu", "Pikachu", "Jigglypuff", "Mewtwo", "Marth", "Roy"]
           }
         ],
-		"map_locations": [
-		  {
-			"map": "character_unlocks",
-			"x": 300,
-			"y": 50
+        "map_locations": [
+          {
+            "map": "character_unlocks",
+            "x": 300,
+            "y": 50
           }
         ]
       }

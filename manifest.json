@@ -1,10 +1,10 @@
 {
-    "name": "Super Smash Bros Melee Archipelago Tracker (WIP)",
+    "name": "Super Smash Bros Melee Archipelago Tracker",
     "game_name": "Super Smash Bros Melee",
     "platform": "Nintendo Gamecube",
-    "package_version": "1.0",
+    "package_version": "2.0",
     "package_uid": "Super_Smash_Bros_Melee_Archipelago",
-    "author": "ZobeePlays",
+    "author": "ZobeePlays, Shprrr",
     "variants": {
         "itemrando": {
             "display_name": "Vertical Map Tracker",
@@ -12,11 +12,5 @@
                 "ap"
             ]
         }
-    },
-    "items": "items",
-    "locations": "locations",
-    "maps": "maps",
-    "logic": "scripts/logic.lua",
-    "layout": "layouts",
-    "autotracking": "scripts/autotracking"
+    }
 }

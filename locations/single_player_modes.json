@@ -194,7 +194,7 @@
             "name": "16,404 Ft. Combined",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["group_unique_characters_16"]
+            "access_rules": ["$GroupUniqueCharacters16"]
           },
           {
             "name": "984 Ft.",

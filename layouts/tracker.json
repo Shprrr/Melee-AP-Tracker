@@ -9,9 +9,7 @@
                 {
                     "type": "dock",
                     "dock": "left",
-                    "width": 190,
-                    "min_height": 400,
-                    "content": {
+                    "content": [{
                         "type": "group",
                         "header": "Progress",
                         "dock": "top",
@@ -25,7 +23,7 @@
                             "popup_background": "#55212121",
                             "layout": "settings_popup"
                         }
-                    }
+                    }]
                 },
                 {
                     "type": "dock",

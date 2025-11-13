@@ -400,7 +400,7 @@
             "name": "Young Link - All-Star Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
-			"access_rules": ["Young Link"]
+            "access_rules": ["Young Link"]
           },
           {
             "name": "Pichu - All-Star Trophy",
