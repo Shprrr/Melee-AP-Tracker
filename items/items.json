@@ -11,13 +11,15 @@
         "type": "toggle",
         "img": "images/items/DrMario.png",
         "img_mods": "",
-        "codes": "DrMario"
+        "disabled_img": "images/items/DrMario-bw.png",
+        "codes": "Dr. Mario"
     },
     {
         "name": "Mario",
         "type": "toggle",
         "img": "images/items/Mario.png",
         "img_mods": "",
+        "disabled_img": "images/items/Mario-bw.png",
         "codes": "Mario"
     },
     {
@@ -25,6 +27,7 @@
         "type": "toggle",
         "img": "images/items/Luigi.png",
         "img_mods": "",
+        "disabled_img": "images/items/Luigi-bw.png",
         "codes": "Luigi"
     },
     {
@@ -32,6 +35,7 @@
         "type": "toggle",
         "img": "images/items/Bowser.png",
         "img_mods": "",
+        "disabled_img": "images/items/Bowser-bw.png",
         "codes": "Bowser"
     },
     {
@@ -39,6 +43,7 @@
         "type": "toggle",
         "img": "images/items/Peach.png",
         "img_mods": "",
+        "disabled_img": "images/items/Peach-bw.png",
         "codes": "Peach"
     },
     {
@@ -46,6 +51,7 @@
         "type": "toggle",
         "img": "images/items/Yoshi.png",
         "img_mods": "",
+        "disabled_img": "images/items/Yoshi-bw.png",
         "codes": "Yoshi"
     },
     {
@@ -53,20 +59,23 @@
         "type": "toggle",
         "img": "images/items/DK.png",
         "img_mods": "",
-        "codes": "DK"
+        "disabled_img": "images/items/DK-bw.png",
+        "codes": "Donkey Kong"
     },
     {
         "name": "Captain Falcon",
         "type": "toggle",
         "img": "images/items/CFalcon.png",
         "img_mods": "",
-        "codes": "CFalcon"
+        "disabled_img": "images/items/captainfalcon-bw.png",
+        "codes": "Captain Falcon"
     },
     {
         "name": "Ganondorf",
         "type": "toggle",
         "img": "images/items/Ganondorf.png",
         "img_mods": "",
+        "disabled_img": "images/items/Ganondorf-bw.png",
         "codes": "Ganondorf"
     },
     {
@@ -74,6 +83,7 @@
         "type": "toggle",
         "img": "images/items/Falco.png",
         "img_mods": "",
+        "disabled_img": "images/items/Falco-bw.png",
         "codes": "Falco"
     },
     {
@@ -81,6 +91,7 @@
         "type": "toggle",
         "img": "images/items/Fox.png",
         "img_mods": "",
+        "disabled_img": "images/items/Fox-bw.png",
         "codes": "Fox"
     },
     {
@@ -88,6 +99,7 @@
         "type": "toggle",
         "img": "images/items/Ness.png",
         "img_mods": "",
+        "disabled_img": "images/items/Ness-bw.png",
         "codes": "Ness"
     },
     {
@@ -95,13 +107,15 @@
         "type": "toggle",
         "img": "images/items/Ice Climbers.png",
         "img_mods": "",
-        "codes": "IceClimbers"
+        "disabled_img": "images/items/iceclimbers-bw.png",
+        "codes": "Ice Climbers"
     },
     {
         "name": "Kirby",
         "type": "toggle",
         "img": "images/items/Kirby.png",
         "img_mods": "",
+        "disabled_img": "images/items/Kirby-bw.png",
         "codes": "Kirby"
     },
     {
@@ -109,6 +123,7 @@
         "type": "toggle",
         "img": "images/items/Samus.png",
         "img_mods": "",
+        "disabled_img": "images/items/Samus-bw.png",
         "codes": "Samus"
     },
     {
@@ -116,6 +131,7 @@
         "type": "toggle",
         "img": "images/items/Zelda.png",
         "img_mods": "",
+        "disabled_img": "images/items/Zelda-bw.png",
         "codes": "Zelda"
     },
     {
@@ -123,6 +139,7 @@
         "type": "toggle",
         "img": "images/items/Link.png",
         "img_mods": "",
+        "disabled_img": "images/items/Link-bw.png",
         "codes": "Link"
     },
     {
@@ -130,13 +147,15 @@
         "type": "toggle",
         "img": "images/items/Young Link.png",
         "img_mods": "",
-        "codes": "YoungLink"
+        "disabled_img": "images/items/younglink-bw.png",
+        "codes": "Young Link"
     },
     {
         "name": "Pichu",
         "type": "toggle",
         "img": "images/items/Pichu.png",
         "img_mods": "",
+        "disabled_img": "images/items/Pichu-bw.png",
         "codes": "Pichu"
     },
     {
@@ -144,6 +163,7 @@
         "type": "toggle",
         "img": "images/items/Pikachu.png",
         "img_mods": "",
+        "disabled_img": "images/items/Pikachu-bw.png",
         "codes": "Pikachu"
     },
     {
@@ -151,30 +171,35 @@
         "type": "toggle",
         "img": "images/items/Jigglypuff.png",
         "img_mods": "",
+        "disabled_img": "images/items/Jigglypuff-bw.png",
         "codes": "Jigglypuff"
     },
     {
         "name": "Mewtwo",
         "type": "toggle",
         "img": "images/items/Mewtwo.png",
+        "disabled_img": "images/items/Mewtwo-bw.png",
         "codes": "Mewtwo"
     },
     {
         "name": "Mr. Game & Watch",
         "type": "toggle",
         "img": "images/items/MrGame&Watch.png",
-        "codes": "G&W"
+        "disabled_img": "images/items/mrgameandwatch-bw.png",
+        "codes": "Mr. Game & Watch"
     },
     {
         "name": "Marth",
         "type": "toggle",
         "img": "images/items/Marth.png",
+        "disabled_img": "images/items/Marth-bw.png",
         "codes": "Marth"
     },
     {
         "name": "Roy",
         "type": "toggle",
         "img": "images/items/Roy.png",
+        "disabled_img": "images/items/Roy-bw.png",
         "codes": "Roy"
     },
     {

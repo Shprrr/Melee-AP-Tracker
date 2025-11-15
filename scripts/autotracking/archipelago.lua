@@ -13,65 +13,35 @@ local function debugPrint(message)
 end
 
 -- Character item IDs to character codes mapping (from your item data)
--- Adding both hex and decimal versions to handle different item ID formats
 local CHARACTER_ITEM_MAPPING = {
     -- Secret characters (hex format)
-    [0x01] = "jigglypuff",     -- Jigglypuff
-    [0x02] = "dr_mario",       -- Dr. Mario
-    [0x03] = "pichu",          -- Pichu
-    [0x04] = "falco",          -- Falco
-    [0x05] = "marth",          -- Marth
-    [0x06] = "young_link",     -- Young Link
-    [0x07] = "ganondorf",      -- Ganondorf
-    [0x08] = "mewtwo",         -- Mewtwo
-    [0x09] = "luigi",          -- Luigi
-    [0x0A] = "roy",            -- Roy
-    [0x0B] = "game_watch",     -- Mr. Game & Watch
+    [0x01] = "Jigglypuff",
+    [0x02] = "Dr. Mario",
+    [0x03] = "Pichu",
+    [0x04] = "Falco",
+    [0x05] = "Marth",
+    [0x06] = "Young Link",
+    [0x07] = "Ganondorf",
+    [0x08] = "Mewtwo",
+    [0x09] = "Luigi",
+    [0x0A] = "Roy",
+    [0x0B] = "Mr. Game & Watch",
 
     -- Starting characters (locked in randomizer until found) (hex format)
-    [0x0C] = "mario",          -- Mario
-    [0x0D] = "bowser",         -- Bowser
-    [0x0E] = "peach",          -- Peach
-    [0x0F] = "yoshi",          -- Yoshi
-    [0x10] = "donkey_kong",    -- Donkey Kong
-    [0x11] = "falcon",         -- Captain Falcon
-    [0x12] = "fox",            -- Fox
-    [0x13] = "ness",           -- Ness
-    [0x14] = "ice_climbers",   -- Ice Climbers
-    [0x15] = "kirby",          -- Kirby
-    [0x16] = "samus",          -- Samus
-    [0x17] = "zelda",          -- Zelda
-    [0x18] = "link",           -- Link
-    [0x19] = "pikachu"         -- Pikachu
-}
-
--- String-based character mapping for item names
-local CHARACTER_NAME_MAPPING = {
-    ["Jigglypuff"] = "jigglypuff",
-    ["Dr. Mario"] = "dr_mario",
-    ["Pichu"] = "pichu",
-    ["Falco"] = "falco",
-    ["Marth"] = "marth",
-    ["Young Link"] = "young_link",
-    ["Ganondorf"] = "ganondorf",
-    ["Mewtwo"] = "mewtwo",
-    ["Luigi"] = "luigi",
-    ["Roy"] = "roy",
-    ["Mr. Game & Watch"] = "game_watch",
-    ["Mario"] = "mario",
-    ["Bowser"] = "bowser",
-    ["Peach"] = "peach",
-    ["Yoshi"] = "yoshi",
-    ["Donkey Kong"] = "donkey_kong",
-    ["Captain Falcon"] = "falcon",
-    ["Fox"] = "fox",
-    ["Ness"] = "ness",
-    ["Ice Climbers"] = "ice_climbers",
-    ["Kirby"] = "kirby",
-    ["Samus"] = "samus",
-    ["Zelda"] = "zelda",
-    ["Link"] = "link",
-    ["Pikachu"] = "pikachu"
+    [0x0C] = "Mario",
+    [0x0D] = "Bowser",
+    [0x0E] = "Peach",
+    [0x0F] = "Yoshi",
+    [0x10] = "Donkey Kong",
+    [0x11] = "Captain Falcon",
+    [0x12] = "Fox",
+    [0x13] = "Ness",
+    [0x14] = "Ice Climbers",
+    [0x15] = "Kirby",
+    [0x16] = "Samus",
+    [0x17] = "Zelda",
+    [0x18] = "Link",
+    [0x19] = "Pikachu",
 }
 
 -- Function to update character unlock from item receipt
@@ -84,10 +54,6 @@ local function updateCharacterFromItem(item_id, item_name)
     if item_id and CHARACTER_ITEM_MAPPING[item_id] then
         character_code = CHARACTER_ITEM_MAPPING[item_id]
         debugPrint("Found character by ID: " .. character_code)
-    -- Try name-based mapping as fallback
-    elseif item_name and CHARACTER_NAME_MAPPING[item_name] then
-        character_code = CHARACTER_NAME_MAPPING[item_name]
-        debugPrint("Found character by name: " .. character_code)
     end
 
     if character_code then

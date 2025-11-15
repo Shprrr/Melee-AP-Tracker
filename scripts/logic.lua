@@ -195,7 +195,7 @@ local function has_all_secret_characters()
            has_dr_mario() and has_young_link() and has_falco()
 end
 
--- Everyone except Game & Watch (needed for G&W unlock)
+-- Everyone except Game & Watch (needed for Mr. Game & Watch unlock)
 local function has_everyone_except_gamewatch()
     return has_dr_mario() and has_mario() and has_luigi() and has_bowser() and
            has_peach() and has_yoshi() and has_donkey_kong() and has_captain_falcon() and

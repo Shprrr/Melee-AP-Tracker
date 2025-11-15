@@ -16,13 +16,12 @@
                             "item_size": 40,
                             "h_alignment": "center",
                             "rows": [
-                                ["DrMario", "Mario", "Luigi", "Bowser"],
-                                ["Peach", "Yoshi", "DK", "CFalcon"],
-                                ["Ganondorf", "Falco", "Fox", "Ness"],
-                                ["IceClimbers", "Kirby", "Samus", "Zelda"],
-                                ["Link", "YoungLink", "Pichu", "Pikachu"],
-                                ["Jigglypuff", "Mewtwo", "G&W", "Marth"],
-                                ["Roy"]
+                                ["Dr. Mario", "Mario", "Luigi", "Bowser", "Peach"],
+                                ["Yoshi", "Donkey Kong", "Captain Falcon", "Ganondorf"],
+                                ["Falco", "Fox", "Ness", "Ice Climbers", "Kirby"],
+                                ["Samus", "Zelda", "Link", "Young Link"],
+                                ["Pichu", "Pikachu", "Jigglypuff", "Mewtwo"],
+                                ["Mr. Game & Watch", "Marth", "Roy"]
                             ]
                         }
                     ]
