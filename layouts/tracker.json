@@ -120,18 +120,27 @@
     "settings_popup": {
         "type": "array",
         "orientation": "vertical",
+        "background": "#000000",
+        "margin": "0,0",
         "content": [
             {
-                "type": "group",
-                "header": "Pinned Locations",
-                "content": {
-                    "type": "recentpins",
-                    "style": "wrap",
-                    "h_alignment": "center",
-                    "v_alignment": "center",
-                    "orientation": "vertical",
-                    "compact": true
-                }
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "50, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["total_trophies_required", "giga_bowser_required", "crazy_hand_required"],
+                        ["goal_evn_51", "goal_all_events", "targets_required"]
+                    ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "200, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["lottery_pool_mode"]
+                    ]
             }
         ]
     }

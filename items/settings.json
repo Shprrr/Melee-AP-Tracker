@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Trophies Required",
+        "type": "consumable",
+        "img": "images/items/Trophy Base.png",
+        "min_quantity": 1,
+        "max_quantity": 293,
+        "initial_quantity": 100,
+        "overlay_font_size": 14,
+        "codes": "total_trophies_required"
+    },
+    {
+        "name": "Giga Bowser Goal",
+        "type": "toggle",
+        "img": "images/items/Giga Bowser.png",
+        "initial_active_state": true,
+        "codes": "giga_bowser_required"
+    },
+    {
+        "name": "Crazy Hand Goal",
+        "type": "toggle",
+        "img": "images/items/Master Hand.png",
+        "codes": "crazy_hand_required"
+    },
+    {
+        "name": "Event 51 Goal",
+        "type": "toggle",
+        "img": "images/items/Event51.png",
+        "codes": "goal_evn_51"
+    },
+    {
+        "name": "All Events Goal",
+        "type": "toggle",
+        "img": "images/items/Event50.png",
+        "codes": "goal_all_events"
+    },
+    {
+        "name": "All Targets Goal",
+        "type": "toggle",
+        "img": "images/items/Target.png",
+        "codes": "targets_required"
+    },
+    {
+        "name": "Lottery Pool Mode",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {"name": "Vanilla", "img": "images/items/Lottery Pool Mode Vanilla.png", "codes": "lottery_pool_mode,lottery_pool_mode_vanilla"},
+            {"name": "Progressive", "img": "images/items/Lottery Pool Mode Progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_progressive"},
+            {"name": "Non-progressive", "img": "images/items/Lottery Pool Mode Non-progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_static"}
+        ]
+    }
+]

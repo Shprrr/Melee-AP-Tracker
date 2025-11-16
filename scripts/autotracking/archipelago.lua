@@ -11,6 +11,25 @@ local function debugPrint(message)
         print("[SSBM DEBUG] " .. message)
     end
 end
+local function dump_table(o, depth)
+    if depth == nil then
+        depth = 0
+    end
+    if type(o) == 'table' then
+        local tabs = ('\t'):rep(depth)
+        local tabs2 = ('\t'):rep(depth + 1)
+        local s = '{\n'
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then
+                k = '"' .. k .. '"'
+            end
+            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
+        end
+        return s .. tabs .. '}'
+    else
+        return tostring(o)
+    end
+end
 
 -- Character item IDs to character codes mapping (from your item data)
 local CHARACTER_ITEM_MAPPING = {
@@ -243,6 +262,21 @@ local function onClear(slot_data)
     debugPrint("=== CLEARING TRACKER STATE ===")
     SLOT_DATA = slot_data
     CUR_INDEX = -1
+
+    -- Gets all settings
+    debugPrint("Dump slot_data:".. dump_table(slot_data))
+    Tracker:FindObjectForCode(ItemSettings.GoalTrophies).AcquiredCount = slot_data[ItemSettings.GoalTrophies]
+    Tracker:FindObjectForCode(ItemSettings.GoalGigaBowser).Active = slot_data[ItemSettings.GoalGigaBowser] == 1
+    Tracker:FindObjectForCode(ItemSettings.GoalCrazyHand).Active = slot_data[ItemSettings.GoalCrazyHand] == 1
+    Tracker:FindObjectForCode(ItemSettings.GoalEvent51).Active = slot_data[ItemSettings.GoalEvent51] == 1
+    Tracker:FindObjectForCode(ItemSettings.GoalAllEvents).Active = slot_data[ItemSettings.GoalAllEvents] == 1
+    Tracker:FindObjectForCode(ItemSettings.GoalAllTargets).Active = slot_data[ItemSettings.GoalAllTargets] == 1
+    local lotteryModeIndex = GetIndex(LotteryPoolMode, slot_data[ItemSettings.LotteryPoolMode])
+    if not lotteryModeIndex then
+        debugPrint("WARNING: Invalid Lottery Pool Mode in slot data: " .. tostring(slot_data[ItemSettings.LotteryPoolMode]))
+        lotteryModeIndex = 1 -- Default to first option
+    end
+    Tracker:FindObjectForCode(ItemSettings.LotteryPoolMode).CurrentStage = lotteryModeIndex
 
     -- Reset all character unlock states
     for _, character_code in pairs(CHARACTER_ITEM_MAPPING) do

@@ -2,25 +2,25 @@
 ITEM_MAPPING = {
     -- Characters (progression items)
     [1] = {"Jigglypuff", "toggle"},
-    [2] = {"DrMario", "toggle"},
+    [2] = {"Dr. Mario", "toggle"},
     [3] = {"Pichu", "toggle"},
     [4] = {"Falco", "toggle"},
     [5] = {"Marth", "toggle"},
-    [6] = {"YoungLink", "toggle"},
+    [6] = {"Young Link", "toggle"},
     [7] = {"Ganondorf", "toggle"},
     [8] = {"Mewtwo", "toggle"},
     [9] = {"Luigi", "toggle"},
     [10] = {"Roy", "toggle"},
-    [11] = {"G&W", "toggle"},
+    [11] = {"Mr. Game & Watch", "toggle"},
     [12] = {"Mario", "toggle"},
     [13] = {"Bowser", "toggle"},
     [14] = {"Peach", "toggle"},
     [15] = {"Yoshi", "toggle"},
-    [16] = {"DK", "toggle"},
-    [17] = {"CFalcon", "toggle"},
+    [16] = {"Donkey Kong", "toggle"},
+    [17] = {"Captain Falcon", "toggle"},
     [18] = {"Fox", "toggle"},
     [19] = {"Ness", "toggle"},
-    [20] = {"IceClimbers", "toggle"},
+    [20] = {"Ice Climbers", "toggle"},
     [21] = {"Kirby", "toggle"},
     [22] = {"Samus", "toggle"},
     [23] = {"Zelda", "toggle"},
@@ -70,6 +70,23 @@ ITEM_MAPPING = {
     ["Falcon Flyer (Trophy)"] = {"Falcon Flyer (Trophy)", "toggle"},
     ["UFO (Trophy)"] = {"UFO (Trophy)", "toggle"},
     ["Sudowoodo (Trophy)"] = {"Sudowoodo (Trophy)", "toggle"}
+}
+
+ItemSettings = {
+    GoalTrophies = "total_trophies_required",
+    GoalGigaBowser = "giga_bowser_required",
+    GoalCrazyHand = "crazy_hand_required",
+    GoalEvent51 = "goal_evn_51",
+    GoalAllEvents = "goal_all_events",
+    GoalAllTargets = "targets_required",
+    LotteryPoolMode = "lottery_pool_mode"
+}
+
+-- "N/A", 1 = "Progressive", 2 = "Static"
+LotteryPoolMode = {
+    Vanilla = "N/A",
+    Progressive = "Progressive",
+    NonProgressive = "Static"
 }
 
 -- Helper function to get tracker code from item description
