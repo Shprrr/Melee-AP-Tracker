@@ -82,11 +82,17 @@ ItemSettings = {
     LotteryPoolMode = "lottery_pool_mode"
 }
 
--- "N/A", 1 = "Progressive", 2 = "Static"
 LotteryPoolMode = {
-    Vanilla = "N/A",
-    Progressive = "Progressive",
-    NonProgressive = "Static"
+    Vanilla = 0,
+    Progressive = 1,
+    NonProgressive = 2
+}
+
+-- "N/A", 1 = "Progressive", 2 = "Static"
+LOTTERY_POOL_MODE_MAPPING = {
+    ["N/A"] = LotteryPoolMode.Vanilla,
+    ["Progressive"] = LotteryPoolMode.Progressive,
+    ["Static"] = LotteryPoolMode.NonProgressive
 }
 
 -- Helper function to get tracker code from item description

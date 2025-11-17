@@ -4,7 +4,6 @@
 -- ===== Custom init function to ensure everything loads in the correct order =====
 local function customInitTracker()
     print("=============== Super Smash Bros Melee TRACKER INITIALIZATION =================")
-    ScriptHost:LoadScript("scripts/utils.lua")
 
     -- Load items and modifiers
     Tracker:AddItems("items/items.json")

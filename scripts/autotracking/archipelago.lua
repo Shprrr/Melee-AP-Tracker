@@ -271,8 +271,8 @@ local function onClear(slot_data)
     Tracker:FindObjectForCode(ItemSettings.GoalEvent51).Active = slot_data[ItemSettings.GoalEvent51] == 1
     Tracker:FindObjectForCode(ItemSettings.GoalAllEvents).Active = slot_data[ItemSettings.GoalAllEvents] == 1
     Tracker:FindObjectForCode(ItemSettings.GoalAllTargets).Active = slot_data[ItemSettings.GoalAllTargets] == 1
-    local lotteryModeIndex = GetIndex(LotteryPoolMode, slot_data[ItemSettings.LotteryPoolMode])
-    if not lotteryModeIndex then
+    local lotteryModeIndex = LOTTERY_POOL_MODE_MAPPING[slot_data[ItemSettings.LotteryPoolMode]]
+    if lotteryModeIndex == nil then
         debugPrint("WARNING: Invalid Lottery Pool Mode in slot data: " .. tostring(slot_data[ItemSettings.LotteryPoolMode]))
         lotteryModeIndex = 1 -- Default to first option
     end
