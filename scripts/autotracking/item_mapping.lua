@@ -1,53 +1,53 @@
 -- Super Smash Bros. Melee Item Mapping for Archipelago
 ITEM_MAPPING = {
     -- Characters (progression items)
-    [1] = {"Jigglypuff", "toggle"},
-    [2] = {"Dr. Mario", "toggle"},
-    [3] = {"Pichu", "toggle"},
-    [4] = {"Falco", "toggle"},
-    [5] = {"Marth", "toggle"},
-    [6] = {"Young Link", "toggle"},
-    [7] = {"Ganondorf", "toggle"},
-    [8] = {"Mewtwo", "toggle"},
-    [9] = {"Luigi", "toggle"},
-    [10] = {"Roy", "toggle"},
-    [11] = {"Mr. Game & Watch", "toggle"},
-    [12] = {"Mario", "toggle"},
-    [13] = {"Bowser", "toggle"},
-    [14] = {"Peach", "toggle"},
-    [15] = {"Yoshi", "toggle"},
-    [16] = {"Donkey Kong", "toggle"},
-    [17] = {"Captain Falcon", "toggle"},
-    [18] = {"Fox", "toggle"},
-    [19] = {"Ness", "toggle"},
-    [20] = {"Ice Climbers", "toggle"},
-    [21] = {"Kirby", "toggle"},
-    [22] = {"Samus", "toggle"},
-    [23] = {"Zelda", "toggle"},
-    [24] = {"Link", "toggle"},
-    [25] = {"Pikachu", "toggle"},
+    [0x01] = {"Jigglypuff", "toggle"},
+    [0x02] = {"Dr. Mario", "toggle"},
+    [0x03] = {"Pichu", "toggle"},
+    [0x04] = {"Falco", "toggle"},
+    [0x05] = {"Marth", "toggle"},
+    [0x06] = {"Young Link", "toggle"},
+    [0x07] = {"Ganondorf", "toggle"},
+    [0x08] = {"Mewtwo", "toggle"},
+    [0x09] = {"Luigi", "toggle"},
+    [0x0A] = {"Roy", "toggle"},
+    [0x0B] = {"Mr. Game & Watch", "toggle"},
+    [0x0C] = {"Mario", "toggle"},
+    [0x0D] = {"Bowser", "toggle"},
+    [0x0E] = {"Peach", "toggle"},
+    [0x0F] = {"Yoshi", "toggle"},
+    [0x10] = {"Donkey Kong", "toggle"},
+    [0x11] = {"Captain Falcon", "toggle"},
+    [0x12] = {"Fox", "toggle"},
+    [0x13] = {"Ness", "toggle"},
+    [0x14] = {"Ice Climbers", "toggle"},
+    [0x15] = {"Kirby", "toggle"},
+    [0x16] = {"Samus", "toggle"},
+    [0x17] = {"Zelda", "toggle"},
+    [0x18] = {"Link", "toggle"},
+    [0x19] = {"Pikachu", "toggle"},
 
     -- Stages
-    [26] = {"Brinstar Depths", "toggle"},
-    [27] = {"Fourside", "toggle"},
-    [28] = {"Big Blue", "toggle"},
-    [29] = {"Poke Floats", "toggle"},
-    [30] = {"Mushroom Kingdom II", "toggle"},
-    [31] = {"Dream Land", "toggle"},
-    [32] = {"Kongo Jungle Past", "toggle"},
-    [33] = {"Yoshi's Island Past", "toggle"},
-    [34] = {"Battlefield", "toggle"},
-    [35] = {"Final Destination", "toggle"},
-    [36] = {"Flat Zone", "toggle"},
+    [0x1A] = {"Brinstar Depths", "toggle"},
+    [0x1B] = {"Fourside", "toggle"},
+    [0x1C] = {"Big Blue", "toggle"},
+    [0x1D] = {"Poke Floats", "toggle"},
+    [0x1E] = {"Mushroom Kingdom II", "toggle"},
+    [0x1F] = {"Dream Land", "toggle"},
+    [0x20] = {"Kongo Jungle Past", "toggle"},
+    [0x21] = {"Yoshi's Island Past", "toggle"},
+    [0x22] = {"Battlefield", "toggle"},
+    [0x23] = {"Final Destination", "toggle"},
+    [0x24] = {"Flat Zone", "toggle"},
 
     -- 1P Modes
-    [37] = {"Adventure Mode", "toggle"},
-    [38] = {"Classic Mode", "toggle"},
-    [39] = {"All-Star Mode", "toggle"},
-    [40] = {"Target Test", "toggle"},
-    [41] = {"Home-Run Contest", "toggle"},
-    [42] = {"Multi-Man Melee", "toggle"},
-    [43] = {"Events", "progressive"},
+    [0x25] = {"Adventure Mode", "toggle"},
+    [0x26] = {"Classic Mode", "toggle"},
+    [0x27] = {"All-Star Mode", "toggle"},
+    [0x28] = {"Target Test", "toggle"},
+    [0x29] = {"Home-Run Contest", "toggle"},
+    [0x2A] = {"Multi-Man Melee", "toggle"},
+    [0x2B] = {"Events"},
 
     -- Character Trophies (examples - there are many more)
     [0x2C] = {"Mario (Trophy)", "toggle"},
@@ -55,14 +55,14 @@ ITEM_MAPPING = {
     [0x2E] = {"Mario (Smash Alt Trophy)", "toggle"},
 
     -- Lottery Pool Upgrades
-    [337] = {"Lottery", "progressive"},
-    [338] = {"Lottery Pool Upgrade (Adventure/Classic Clear)", "toggle"},
-    [339] = {"Lottery Pool Upgrade (Secret Characters)", "toggle"},
-    [340] = {"Lottery Pool Upgrade (200 Vs. Matches)", "toggle"},
-    [341] = {"Lottery Pool Upgrade (250 Trophies)", "toggle"},
+    [0x151] = {"Lottery", "progressive"},
+    [0x152] = {"Lottery Pool Upgrade (Adventure/Classic Clear)", "toggle"},
+    [0x153] = {"Lottery Pool Upgrade (Secret Characters)", "toggle"},
+    [0x154] = {"Lottery Pool Upgrade (200 Vs. Matches)", "toggle"},
+    [0x155] = {"Lottery Pool Upgrade (250 Trophies)", "toggle"},
 
     -- Special items
-    [345] = {"Pikmin Savefile", "toggle"},
+    [0x159] = {"Pikmin Savefile", "toggle"},
 
     -- Trophy items (examples)
     ["Birdo (Trophy)"] = {"Birdo (Trophy)", "toggle"},
@@ -79,7 +79,8 @@ ItemSettings = {
     GoalEvent51 = "goal_evn_51",
     GoalAllEvents = "goal_all_events",
     GoalAllTargets = "targets_required",
-    LotteryPoolMode = "lottery_pool_mode"
+    LotteryPoolMode = "lottery_pool_mode",
+    Eventsanity = "event_checks"
 }
 
 LotteryPoolMode = {
@@ -94,37 +95,6 @@ LOTTERY_POOL_MODE_MAPPING = {
     ["Progressive"] = LotteryPoolMode.Progressive,
     ["Static"] = LotteryPoolMode.NonProgressive
 }
-
--- Helper function to get tracker code from item description
-local function get_tracker_code_for_item(item_description)
-    if ITEM_MAPPING[item_description] then
-        if type(ITEM_MAPPING[item_description]) == "string" then
-            return ITEM_MAPPING[item_description]
-        elseif type(ITEM_MAPPING[item_description]) == "table" then
-            return ITEM_MAPPING[item_description][1]
-        end
-    end
-
-    -- Try numeric lookup
-    local item_id = tonumber(item_description)
-    if item_id and ITEM_MAPPING[item_id] then
-        if type(ITEM_MAPPING[item_id]) == "table" then
-            return ITEM_MAPPING[item_id][1]
-        end
-    end
-
-    return nil
-end
-
--- Helper function to get item type from tracker code
-local function get_item_type(tracker_code)
-    for _, mapping in pairs(ITEM_MAPPING) do
-        if type(mapping) == "table" and mapping[1] == tracker_code then
-            return mapping[2]
-        end
-    end
-    return "toggle" -- Default to toggle
-end
 
 -- Function to update trophy counters when trophies are received
 local function updateTrophyCounters(item_name)

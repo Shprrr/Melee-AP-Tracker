@@ -51,5 +51,11 @@
             {"name": "Progressive", "img": "images/items/Lottery Pool Mode Progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_progressive"},
             {"name": "Non-progressive", "img": "images/items/Lottery Pool Mode Non-progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_static"}
         ]
+    },
+    {
+        "name": "Eventsanity",
+        "type": "toggle",
+        "img": "images/items/Event.png",
+        "codes": "event_checks"
     }
 ]

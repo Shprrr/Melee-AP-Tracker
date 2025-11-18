@@ -141,6 +141,15 @@
                 "rows": [
                         ["lottery_pool_mode"]
                     ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "5, 7",
+                "item_size": "50, 50",
+                "h_alignment": "left",
+                "rows": [
+                        ["event_checks"]
+                    ]
             }
         ]
     }

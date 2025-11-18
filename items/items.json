@@ -307,9 +307,9 @@
     },
     {
         "name": "Progressive Event Match",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "initial_stage_idx": 0,
-        "initial_active_state": true,
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "Initial Event Pool",
@@ -329,7 +329,7 @@
             {
                 "name": "3 Event Pool Upgrades",
                 "img": "images/items/Event25.png",
-                "codes": "Event20, Events"
+                "codes": "Event25, Events"
             },
             {
                 "name": "4 Event Pool Upgrades",

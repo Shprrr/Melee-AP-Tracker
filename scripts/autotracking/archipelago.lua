@@ -101,6 +101,67 @@ local function updateCharacterFromItem(item_id, item_name)
     return false
 end
 
+-- resets an item to its initial state
+local function resetItem(item_code, item_type)
+    local obj = Tracker:FindObjectForCode(item_code)
+    if obj then
+        item_type = item_type or obj.Type
+        debugPrint(string.format("resetItem: resetting item %s of type %s", item_code, item_type))
+        if item_type == "toggle" or item_type == "toggle_badged" then
+            obj.Active = false
+        elseif item_type == "progressive" or item_type == "progressive_toggle" then
+            obj.CurrentStage = 0
+            obj.Active = false
+        elseif item_type == "consumable" then
+            obj.AcquiredCount = 0
+        elseif item_type == "custom" then
+            -- your code for your custom lua items goes here
+        elseif item_type == "static" then
+            debugPrint(string.format("resetItem: tried to reset static item %s", item_code))
+        elseif item_type == "composite_toggle" then
+            debugPrint(string.format(
+                "resetItem: tried to reset composite_toggle item %s but composite_toggle cannot be accessed via lua." ..
+                "Please use the respective left/right toggle item codes instead.", item_code))
+        else
+            debugPrint(string.format("resetItem: unknown item type %s for code %s", item_type, item_code))
+        end
+    else
+        debugPrint(string.format("resetItem: could not find item object for code %s", item_code))
+    end
+end
+
+-- advances the state of an item
+local function incrementItem(item_code, item_type, multiplier)
+    local obj = Tracker:FindObjectForCode(item_code)
+    if obj then
+        item_type = item_type or obj.Type
+        debugPrint(string.format("incrementItem: code: %s, type %s", item_code, item_type))
+        if item_type == "toggle" or item_type == "toggle_badged" then
+            obj.Active = true
+        elseif item_type == "progressive" or item_type == "progressive_toggle" then
+            if obj.Active then
+                obj.CurrentStage = obj.CurrentStage + 1
+            else
+                obj.Active = true
+            end
+        elseif item_type == "consumable" then
+            obj.AcquiredCount = obj.AcquiredCount + obj.Increment * multiplier
+        elseif item_type == "custom" then
+            -- your code for your custom lua items goes here
+        elseif item_type == "static" then
+            debugPrint(string.format("incrementItem: tried to increment static item %s", item_code))
+        elseif item_type == "composite_toggle" then
+            debugPrint(string.format(
+                "incrementItem: tried to increment composite_toggle item %s but composite_toggle cannot be access via lua." ..
+                "Please use the respective left/right toggle item codes instead.", item_code))
+        else
+            debugPrint(string.format("incrementItem: unknown item type %s for code %s", item_type, item_code))
+        end
+    else
+        debugPrint(string.format("incrementItem: could not find object for code %s", item_code))
+    end
+end
+
 -- Function to update trophy counters
 local function updateTrophyCounters(location_id)
     -- Check if it's a trophy location (0x12A-0x271 range)
@@ -203,7 +264,7 @@ local function onLocation(location_id, location_name)
     end
 end
 
--- Main item handler 
+-- Main item handler
 local function onItem(index, item_id, item_name, player_number)
     debugPrint("=== ITEM HANDLER CALLED ===")
     debugPrint("Index: " .. tostring(index) .. ", CUR_INDEX: " .. tostring(CUR_INDEX))
@@ -220,41 +281,42 @@ local function onItem(index, item_id, item_name, player_number)
     debugPrint("Is local item: " .. tostring(is_local))
 
 
-        debugPrint("Processing item...")
+    debugPrint("Processing item...")
 
-        -- Handle character unlocks
-        local success = updateCharacterFromItem(item_id, item_name)
-        if success then
-            debugPrint("Character unlock successful!")
-        else
-            debugPrint("No character unlocked for this item")
-        end
+    -- Handle character unlocks
+    local success = updateCharacterFromItem(item_id, item_name)
+    if success then
+        debugPrint("Character unlock successful!")
+        return
+    end
 
-        -- Handle other item types (coins, etc.)
-        if item_name then
-            if item_name == "Coin" then
-                local coin_counter = Tracker:FindObjectForCode("coins_collected")
-                if coin_counter then
-                    coin_counter.AcquiredCount = coin_counter.AcquiredCount + 1
-                    debugPrint("Added 1 coin, total: " .. coin_counter.AcquiredCount)
-                end
-            elseif item_name == "10 Coins" then
-                local coin_counter = Tracker:FindObjectForCode("coins_collected")
-                if coin_counter then
-                    coin_counter.AcquiredCount = coin_counter.AcquiredCount + 10
-                    debugPrint("Added 10 coins, total: " .. coin_counter.AcquiredCount)
-                end
-            elseif item_name == "20 Coins" then
-                local coin_counter = Tracker:FindObjectForCode("coins_collected")
-                if coin_counter then
-                    coin_counter.AcquiredCount = coin_counter.AcquiredCount + 20
-                    debugPrint("Added 20 coins, total: " .. coin_counter.AcquiredCount)
-                end
-            end
+    -- Handle other item types (coins, etc.)
+    if item_name == "Coin" then
+        local coin_counter = Tracker:FindObjectForCode("coins_collected")
+        if coin_counter then
+            coin_counter.AcquiredCount = coin_counter.AcquiredCount + 1
+            debugPrint("Added 1 coin, total: " .. coin_counter.AcquiredCount)
         end
-    -- else
-    --     debugPrint("Skipping non-local item")
-    -- end
+    elseif item_name == "10 Coins" then
+        local coin_counter = Tracker:FindObjectForCode("coins_collected")
+        if coin_counter then
+            coin_counter.AcquiredCount = coin_counter.AcquiredCount + 10
+            debugPrint("Added 10 coins, total: " .. coin_counter.AcquiredCount)
+        end
+    elseif item_name == "20 Coins" then
+        local coin_counter = Tracker:FindObjectForCode("coins_collected")
+        if coin_counter then
+            coin_counter.AcquiredCount = coin_counter.AcquiredCount + 20
+            debugPrint("Added 20 coins, total: " .. coin_counter.AcquiredCount)
+        end
+    end
+
+    local mapping_entry = ITEM_MAPPING[item_id]
+    if not mapping_entry then
+        debugPrint(string.format("onItem: could not find item mapping for id %s", item_id))
+        return
+    end
+    incrementItem(mapping_entry[1], mapping_entry[2], mapping_entry[3] or 1)
 end
 
 -- Clear handler for reset
@@ -278,11 +340,20 @@ local function onClear(slot_data)
     end
     Tracker:FindObjectForCode(ItemSettings.LotteryPoolMode).CurrentStage = lotteryModeIndex
 
-    -- Reset all character unlock states
-    for _, character_code in pairs(CHARACTER_ITEM_MAPPING) do
-        local obj = Tracker:FindObjectForCode(character_code)
-        if obj then
-            obj.Active = false
+    -- Gets settings deduced from available locations
+    local allLocations = {}
+    for _, locationId in ipairs(Archipelago.CheckedLocations) do
+        allLocations[locationId] = true
+    end
+    for _, locationId in ipairs(Archipelago.MissingLocations) do
+        allLocations[locationId] = true
+    end
+    Tracker:FindObjectForCode(ItemSettings.Eventsanity).Active = allLocations[0xF7] or false -- Event Match 1 - Trouble King
+
+    -- Reset all items
+    for _, mapping_entry in pairs(ITEM_MAPPING) do
+        if mapping_entry then
+            resetItem(mapping_entry[1], mapping_entry[2])
         end
     end
 

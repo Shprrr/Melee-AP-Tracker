@@ -148,32 +148,44 @@ end
 -- EVENT MATCH PROGRESSION
 -- =====================================
 
-local function progressive_event_pack()
-    return has("Progressive Event Pack")
+function EventsRequired()
+    return has(ItemSettings.Eventsanity) or has("goal_all_events")
 end
 
-local function progressive_event_pack_count(amount)
-    return hasCount("Progressive Event Pack", amount)
+function Events1To10Available()
+    return has("Event10")
 end
 
-local function events_1_10_available()
-    return true -- Always available
+function Events11To15Available()
+    return has("Event15")
 end
 
-local function events_11_20_available()
-    return progressive_event_pack_count(1)
+function Events16To20Available()
+    return has("Event20")
 end
 
-local function events_21_30_available()
-    return progressive_event_pack_count(2)
+function Events21To25Available()
+    return has("Event25")
 end
 
-local function events_31_40_available()
-    return progressive_event_pack_count(3)
+function Events26To29Available()
+    return has("Event29")
 end
 
-local function events_41_51_available()
-    return progressive_event_pack_count(4)
+function Events30Available()
+    return has("Event30")
+end
+
+function Events31To39Available()
+    return has("Event39")
+end
+
+function Events40To50Available()
+    return has("Event50")
+end
+
+function Events51Available()
+    return has("Event51")
 end
 
 -- =====================================
@@ -541,87 +553,87 @@ end
 -- =====================================
 
 -- Event matches with specific character requirements
-local function can_do_trouble_king()
+function CanDoTroubleKing()
     return has_mario()
 end
 
-local function can_do_lord_of_jungle()
+function CanDoLordOfJungle()
     return has_donkey_kong()
 end
 
-local function can_do_spare_change()
+function CanDoSpareChange()
     return has_ness()
 end
 
-local function can_do_yoshis_egg()
+function CanDoYoshisEgg()
     return has_yoshi()
 end
 
-local function can_do_kirbys_air_raid()
+function CanDoKirbysAirRaid()
     return has_kirby()
 end
 
-local function can_do_bounty_hunters()
+function CanDoBountyHunters()
     return has_samus()
 end
 
-local function can_do_links_adventure()
+function CanDoLinksAdventure()
     return has_link()
 end
 
-local function can_do_peachs_peril()
+function CanDoPeachsPeril()
     return has_mario()
 end
 
-local function can_do_gargantuans()
+function CanDoGargantuans()
     return has_bowser()
 end
 
-local function can_do_cold_armor()
+function CanDoColdArmor()
     return has_samus()
 end
 
-local function can_do_triforce_gathering()
+function CanDoTriforceGathering()
     return has_link()
 end
 
-local function can_do_target_acquired()
+function CanDoTargetAcquired()
     return has_falco()
 end
 
-local function can_do_lethal_marathon()
+function CanDoLethalMarathon()
     return has_captain_falcon()
 end
 
-local function can_do_seven_years()
+function CanDoSevenYears()
     return has_young_link()
 end
 
-local function can_do_time_for_checkup()
+function CanDoTimeForCheckup()
     return has_luigi()
 end
 
-local function can_do_space_travelers()
+function CanDoSpaceTravelers()
     return has_ness()
 end
 
-local function can_do_jigglypuff_live()
+function CanDoJigglypuffLive()
     return has_jigglypuff()
 end
 
-local function can_do_en_garde()
+function CanDoEnGarde()
     return has_marth()
 end
 
-local function can_do_trouble_king_2()
+function CanDoTroubleKing2()
     return has_luigi()
 end
 
-local function can_do_birds_of_prey()
+function CanDoBirdsOfPrey()
     return has_fox()
 end
 
-local function can_do_gamewatch_forever()
+function CanDoGameWatchForever()
     return has_mr_game_and_watch()
 end
 
