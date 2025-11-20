@@ -474,13 +474,5 @@
         "img": "images/items/Lottery 250 Trophies.png",
         "img_mods": "",
         "codes": "Lottery250"
-    },
-    {
-        "name": "Trophies",
-        "type": "consumable",
-        "max_quantity": 293,
-        "img": "images/items/Trophy Base.png",
-        "img_mods": "",
-        "codes": "Trophies"
     }
 ]

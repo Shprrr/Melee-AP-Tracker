@@ -148,7 +148,7 @@
                 "item_size": "50, 50",
                 "h_alignment": "left",
                 "rows": [
-                        ["event_checks"]
+                        ["event_checks", "all_classic_trophies", "all_adventure_trophies"]
                     ]
             }
         ]

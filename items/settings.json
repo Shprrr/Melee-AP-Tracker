@@ -57,5 +57,17 @@
         "type": "toggle",
         "img": "images/items/Event.png",
         "codes": "event_checks"
+    },
+    {
+        "name": "Classic Mode - All Character Trophies",
+        "type": "toggle",
+        "img": "images/items/Trophy Classic.png",
+        "codes": "all_classic_trophies"
+    },
+    {
+        "name": "Adventure Mode - All Character Trophies",
+        "type": "toggle",
+        "img": "images/items/Trophy Adventure.png",
+        "codes": "all_adventure_trophies"
     }
 ]

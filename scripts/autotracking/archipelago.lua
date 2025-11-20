@@ -101,6 +101,47 @@ local function updateCharacterFromItem(item_id, item_name)
     return false
 end
 
+-- Function to update trophy counters when trophies are received
+local function updateTrophyCounters(item_id, item_name)
+    if not item_name then return false end
+
+    -- Check if it's a trophy item
+    if item_name:find("Trophy") then
+        local total_counter = Tracker:FindObjectForCode("total_trophies")
+        if total_counter then
+            total_counter.AcquiredCount = total_counter.AcquiredCount + 1
+            debugPrint("Total trophies: " .. total_counter.AcquiredCount)
+        end
+
+        -- Check if it's a character trophy
+        if item_id >= 0x2C and item_id <= 0x79 then
+            -- Character trophies - determine type by pattern (every 3rd is classic, adventure, all-star)
+            -- 0x2C == Classic Mario Trophy
+            -- 0x2D == Adventure Mario Trophy
+            -- 0x2E == All-Star Mario Trophy
+            -- 0x79 == All-Star Roy Trophy
+            local trophy_index = ((item_id - 0x2C) % 3)
+            local category_counter = nil
+
+            if trophy_index == 0 then -- Classic trophy
+                category_counter = Tracker:FindObjectForCode("classic_trophies")
+            elseif trophy_index == 1 then -- Adventure trophy
+                category_counter = Tracker:FindObjectForCode("adventure_trophies")
+            elseif trophy_index == 2 then -- All-Star trophy
+                category_counter = Tracker:FindObjectForCode("allstar_trophies")
+            end
+
+            if category_counter then
+                category_counter.AcquiredCount = category_counter.AcquiredCount + 1
+            end
+        end
+
+        return true
+    end
+
+    return false
+end
+
 -- resets an item to its initial state
 local function resetItem(item_code, item_type)
     local obj = Tracker:FindObjectForCode(item_code)
@@ -162,37 +203,6 @@ local function incrementItem(item_code, item_type, multiplier)
     end
 end
 
--- Function to update trophy counters
-local function updateTrophyCounters(location_id)
-    -- Check if it's a trophy location (0x12A-0x271 range)
-    if location_id >= 0x12A and location_id <= 0x271 then
-        local total_counter = Tracker:FindObjectForCode("total_trophies")
-        if total_counter then
-            total_counter.AcquiredCount = total_counter.AcquiredCount + 1
-            debugPrint("Total trophies: " .. total_counter.AcquiredCount)
-        end
-
-        -- Update specific trophy category counters based on ID ranges
-        if location_id >= 0x12A and location_id <= 0x177 then
-            -- Character trophies - determine type by pattern (every 3rd is adventure, classic, all-star)
-            local trophy_index = ((location_id - 0x12A) % 3)
-            local category_counter = nil
-
-            if trophy_index == 0 then -- Adventure trophy
-                category_counter = Tracker:FindObjectForCode("adventure_trophies")
-            elseif trophy_index == 1 then -- Classic trophy  
-                category_counter = Tracker:FindObjectForCode("classic_trophies")
-            elseif trophy_index == 2 then -- All-Star trophy
-                category_counter = Tracker:FindObjectForCode("allstar_trophies")
-            end
-
-            if category_counter then
-                category_counter.AcquiredCount = category_counter.AcquiredCount + 1
-            end
-        end
-    end
-end
-
 -- Function to update bonus achievement counters
 local function updateBonusCounters(location_id)
     -- Check if it's a bonus achievement (0x01-0xF6 range)
@@ -216,7 +226,7 @@ local function updateEventTargetCounters(location_id)
         end
     end
 
-    -- Target tests (0x184-0x19C range) 
+    -- Target tests (0x184-0x19C range)
     if location_id >= 0x184 and location_id <= 0x19C then
         local target_counter = Tracker:FindObjectForCode("targets_cleared")
         if target_counter then
@@ -232,7 +242,6 @@ local function onLocation(location_id, location_name)
     debugPrint("ID: " .. tostring(location_id) .. ", Name: " .. tostring(location_name or "unknown"))
 
     -- Update counters first
-    updateTrophyCounters(location_id)
     updateBonusCounters(location_id)
     updateEventTargetCounters(location_id)
 
@@ -287,6 +296,10 @@ local function onItem(index, item_id, item_name, player_number)
     local success = updateCharacterFromItem(item_id, item_name)
     if success then
         debugPrint("Character unlock successful!")
+        return
+    end
+
+    if updateTrophyCounters(item_id, item_name) then
         return
     end
 
@@ -349,6 +362,8 @@ local function onClear(slot_data)
         allLocations[locationId] = true
     end
     Tracker:FindObjectForCode(ItemSettings.Eventsanity).Active = allLocations[0xF7] or false -- Event Match 1 - Trouble King
+    Tracker:FindObjectForCode(ItemSettings.AllClassicTrophies).Active = allLocations[0x183] or false -- Classic Mode - All Character Trophies
+    Tracker:FindObjectForCode(ItemSettings.AllAdventureTrophies).Active = allLocations[0x17B] or false -- Adventure Mode - All Character Trophies
 
     -- Reset all items
     for _, mapping_entry in pairs(ITEM_MAPPING) do

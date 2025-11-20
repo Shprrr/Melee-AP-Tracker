@@ -120,12 +120,12 @@ end
 -- GAME MODE ACCESS
 -- =====================================
 
-local function has_adventure_mode()
-    return has("Adventure Mode")
+function HasClassicMode()
+    return has("Classic Mode")
 end
 
-local function has_classic_mode()
-    return has("Classic Mode")
+function HasAdventureMode()
+    return has("Adventure Mode")
 end
 
 local function has_all_star_mode()
@@ -355,6 +355,14 @@ end
 -- TROPHY REQUIREMENTS
 -- =====================================
 
+function HasAllClassicTrophies()
+    return hasCount("classic_trophies", 26)
+end
+
+function HasAllAdventureTrophies()
+    return hasCount("adventure_trophies", 26)
+end
+
 local function has_birdo_trophy()
     return has("Birdo (Trophy)")
 end
@@ -445,7 +453,7 @@ local function can_unlock_mewtwo()
 end
 
 local function can_unlock_luigi()
-    return has_adventure_mode()
+    return HasAdventureMode()
 end
 
 local function can_unlock_roy()
@@ -453,7 +461,7 @@ local function can_unlock_roy()
 end
 
 local function can_unlock_mr_game_and_watch()
-    return has_everyone_except_gamewatch() and (has_adventure_mode() or has_all_star_mode() or has_classic_mode() or has_target_test())
+    return has_everyone_except_gamewatch() and (HasAdventureMode() or has_all_star_mode() or HasClassicMode() or has_target_test())
 end
 
 -- =====================================
@@ -492,8 +500,8 @@ local function can_access_all_star()
 end
 
 -- Classic mode specific requirements
-local function can_do_gamewatch_classic()
-    return has_mr_game_and_watch() and has_classic_mode()
+function CanDoGameWatchClassic()
+    return has_mr_game_and_watch() and HasClassicMode()
 end
 
 -- =====================================
@@ -521,16 +529,16 @@ end
 
 -- Multi-KO bonuses (Adventure/All-Star have more enemies)
 local function can_get_quadruple_ko()
-    return has_adventure_mode() or has_all_star_mode()
+    return HasAdventureMode() or has_all_star_mode()
 end
 
 local function can_get_quintuple_ko()
-    return has_adventure_mode() or has_all_star_mode()
+    return HasAdventureMode() or has_all_star_mode()
 end
 
 -- All bonuses requirement (for Diskun trophy)
 local function can_get_all_bonuses()
-    return has_adventure_mode() and has_all_star_mode() and has_classic_mode() and
+    return HasAdventureMode() and has_all_star_mode() and HasClassicMode() and
            has_luigi() and has_meteor_character() and has_reflect_character()
 end
 
@@ -643,11 +651,11 @@ end
 
 -- Character trophy unlocks require having the character AND the mode
 local function can_get_adventure_trophy(character)
-    return has(character) and has_adventure_mode()
+    return has(character) and HasAdventureMode()
 end
 
 local function can_get_classic_trophy(character)
-    return has(character) and has_classic_mode()
+    return has(character) and HasClassicMode()
 end
 
 local function can_get_allstar_trophy(character)

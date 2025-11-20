@@ -7,8 +7,46 @@
     "access_rules": [],
     "children": [
       {
+        "name": "Classic Mode",
+        "access_rules": ["$HasClassicMode"],
+        "chest_unopened_img": "images/chests/mode_uncollected.png",
+        "chest_opened_img": "images/chests/mode_collected.png",
+        "sections": [
+          {
+            "name": "5 Minute Clear",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png"
+          },
+          {
+            "name": "Hard-Continueless Clear",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png"
+          },
+          {
+            "name": "All Character Trophies",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$HasAllClassicTrophies"],
+            "visibility_rules": ["all_classic_trophies"]
+          },
+          {
+            "name": "Game & Watch Clear",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$CanDoGameWatchClassic"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "single_player",
+            "x": 50,
+            "y": 50
+          }
+        ]
+      },
+      {
         "name": "Adventure Mode",
-        "access_rules": [],
+        "access_rules": ["$HasAdventureMode"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [
@@ -30,7 +68,9 @@
           {
             "name": "All Character Trophies",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$HasAllAdventureTrophies"],
+            "visibility_rules": ["all_adventure_trophies"]
           },
           {
             "name": "Giga Bowser Continueless",
@@ -41,14 +81,14 @@
         "map_locations": [
           {
             "map": "single_player",
-            "x": 50,
+            "x": 100,
             "y": 50
           }
         ]
       },
       {
         "name": "All-Star Mode",
-        "access_rules": ["all_star_mode"],
+        "access_rules": ["All-Star Mode"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [
@@ -76,41 +116,6 @@
         "map_locations": [
           {
             "map": "single_player",
-            "x": 100,
-            "y": 50
-          }
-        ]
-      },
-      {
-        "name": "Classic Mode",
-        "access_rules": [],
-        "chest_unopened_img": "images/chests/mode_uncollected.png",
-        "chest_opened_img": "images/chests/mode_collected.png",
-        "sections": [
-          {
-            "name": "5 Minute Clear",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
-          },
-          {
-            "name": "Hard-Continueless Clear",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
-          },
-          {
-            "name": "All Character Trophies",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
-          },
-          {
-            "name": "Game & Watch Clear",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "single_player",
             "x": 150,
             "y": 50
           }
@@ -118,7 +123,7 @@
       },
       {
         "name": "Multi Man Melee",
-        "access_rules": [],
+        "access_rules": ["Multi-Man Melee"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [

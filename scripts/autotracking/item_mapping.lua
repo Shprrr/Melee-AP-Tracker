@@ -80,7 +80,9 @@ ItemSettings = {
     GoalAllEvents = "goal_all_events",
     GoalAllTargets = "targets_required",
     LotteryPoolMode = "lottery_pool_mode",
-    Eventsanity = "event_checks"
+    Eventsanity = "event_checks",
+    AllClassicTrophies = "all_classic_trophies",
+    AllAdventureTrophies = "all_adventure_trophies"
 }
 
 LotteryPoolMode = {
@@ -95,27 +97,3 @@ LOTTERY_POOL_MODE_MAPPING = {
     ["Progressive"] = LotteryPoolMode.Progressive,
     ["Static"] = LotteryPoolMode.NonProgressive
 }
-
--- Function to update trophy counters when trophies are received
-local function updateTrophyCounters(item_name)
-    if not item_name then return end
-
-    -- Check if it's a trophy item
-    if item_name:find("Trophy") then
-        local total_counter = Tracker:FindObjectForCode("total_trophies")
-        if total_counter then
-            total_counter.AcquiredCount = total_counter.AcquiredCount + 1
-            print("Total trophies: " .. total_counter.AcquiredCount)
-        end
-
-        -- Check if it's a character trophy
-        if item_name:find("Smash Trophy") or item_name:find("Smash Alt Trophy") or
-           (item_name:find("Trophy") and not item_name:find("(")) then
-            local char_counter = Tracker:FindObjectForCode("character_trophies")
-            if char_counter then
-                char_counter.AcquiredCount = char_counter.AcquiredCount + 1
-                print("Character trophies: " .. char_counter.AcquiredCount)
-            end
-        end
-    end
-end

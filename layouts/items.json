@@ -61,8 +61,8 @@
                             "item_size": 40,
                             "h_alignment": "center",
                             "rows": [
-                                ["Empty", "Trophies", "PikminSave", "Empty"],
-                                ["Birdo", "Kraid", "Sudowoodo"],
+                                ["total_trophies", "classic_trophies", "adventure_trophies", "Empty"],
+                                ["PikminSave", "Birdo", "Kraid", "Sudowoodo"],
                                 ["Empty", "UFO", "Falcon Flyer", "Empty"]
                             ]
                         }
