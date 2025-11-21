@@ -32,6 +32,14 @@
         "codes": "adventure_trophies"
     },
     {
+        "name": "Trophies All-Star Mode",
+        "type": "consumable",
+        "max_quantity": 26,
+        "img": "images/items/Trophy All-Star.png",
+        "overlay_font_size": 14,
+        "codes": "allstar_trophies"
+    },
+    {
         "name": "Event Matches Required",
         "type": "consumable",
         "img": "images/events/event_required.png",

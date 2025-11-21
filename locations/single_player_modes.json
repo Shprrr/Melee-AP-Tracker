@@ -20,7 +20,8 @@
           {
             "name": "Hard-Continueless Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "visibility_rules": ["hard_modes_clear"]
           },
           {
             "name": "All Character Trophies",
@@ -58,7 +59,8 @@
           {
             "name": "Hard-Continueless Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "visibility_rules": ["hard_modes_clear"]
           },
           {
             "name": "Escape Brinstar",
@@ -88,7 +90,7 @@
       },
       {
         "name": "All-Star Mode",
-        "access_rules": ["All-Star Mode"],
+        "access_rules": ["$HasAllStarMode"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [
@@ -105,12 +107,15 @@
           {
             "name": "Hard Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "visibility_rules": ["hard_modes_clear"]
           },
           {
             "name": "All Character Trophies",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$HasAllAllStarTrophies"],
+            "visibility_rules": ["all_allstar_trophies"]
           }
         ],
         "map_locations": [
@@ -122,15 +127,54 @@
         ]
       },
       {
+        "name": "Home-Run Contest",
+        "access_rules": ["$HasHomeRunContest"],
+        "chest_unopened_img": "images/chests/mode_uncollected.png",
+        "chest_opened_img": "images/chests/mode_collected.png",
+        "sections": [
+          {
+            "name": "16,404 Ft. Combined",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$CanDoCombinedDistance"]
+          },
+          {
+            "name": "984 Ft.",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png"
+          },
+          {
+            "name": "1,312 Ft.",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$CanDo1312Feet"]
+          },
+          {
+            "name": "1,476 Ft.",
+            "chest_unopened_img": "images/chests/mode_uncollected.png",
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$CanDo1476Feet"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "single_player",
+            "x": 200,
+            "y": 50
+          }
+        ]
+      },
+      {
         "name": "Multi Man Melee",
-        "access_rules": ["Multi-Man Melee"],
+        "access_rules": ["$HasMultiManMelee"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [
           {
             "name": "15 Minute Melee Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "visibility_rules": ["enable_annoying_multiman_checks"]
           },
           {
             "name": "100 Man Melee Sub 4 Minutes",
@@ -140,7 +184,8 @@
           {
             "name": "Cruel Melee 5 KO's",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "visibility_rules": ["enable_annoying_multiman_checks"]
           },
           {
             "name": "Endless Melee 100 KO's",
@@ -151,7 +196,7 @@
         "map_locations": [
           {
             "map": "single_player",
-            "x": 200,
+            "x": 250,
             "y": 50
           }
         ]
@@ -166,57 +211,19 @@
             "name": "125 Combined Combos",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["Kirby", "Fox", "Pichu", "Pikachu", "Zelda", "Bowser"]
+            "access_rules": ["$CanDo125Combos"]
           },
           {
             "name": "10-Hit Combo",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["Bowser"]
+            "access_rules": ["$CanDo10HitCombo"]
           },
           {
             "name": "20-Hit Combo",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["Bowser"]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "single_player",
-            "x": 250,
-            "y": 50
-          }
-        ]
-      },
-      {
-        "name": "Home-Run Contest",
-        "access_rules": ["Home-Run Contest"],
-        "chest_unopened_img": "images/chests/mode_uncollected.png",
-        "chest_opened_img": "images/chests/mode_collected.png",
-        "sections": [
-          {
-            "name": "16,404 Ft. Combined",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["$GroupUniqueCharacters16"]
-          },
-          {
-            "name": "984 Ft.",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
-          },
-          {
-            "name": "1,312 Ft.",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["Dr. Mario"]
-          },
-          {
-            "name": "1,476 Ft.",
-            "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["Ganondorf"]
+            "access_rules": ["$CanDo20HitCombo"]
           }
         ],
         "map_locations": [

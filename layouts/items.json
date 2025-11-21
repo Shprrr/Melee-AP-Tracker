@@ -40,8 +40,8 @@
                             "item_margin": "2,2",
                             "item_size": 40,
                             "rows": [
-                                ["Classic Mode", "Adventure Mode", "All-Star Mode", "Target Test"],
-                                ["Events", "Home-Run Contest", "Multi-Man Melee", "Lottery"],
+                                ["Classic Mode", "Adventure Mode", "All-Star Mode", "Events"],
+                                ["Target Test", "Home-Run Contest", "Multi-Man Melee", "Lottery"],
                                 ["Lottery Adventure+Classic", "Lottery200VS", "LotterySecret", "Lottery250"]
                             ]
                         }
@@ -61,7 +61,7 @@
                             "item_size": 40,
                             "h_alignment": "center",
                             "rows": [
-                                ["total_trophies", "classic_trophies", "adventure_trophies", "Empty"],
+                                ["total_trophies", "classic_trophies", "adventure_trophies", "allstar_trophies"],
                                 ["PikminSave", "Birdo", "Kraid", "Sudowoodo"],
                                 ["Empty", "UFO", "Falcon Flyer", "Empty"]
                             ]

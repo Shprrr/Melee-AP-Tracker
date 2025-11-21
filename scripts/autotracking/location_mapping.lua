@@ -146,12 +146,15 @@ LOCATION_TO_TRACKER_MAP = {
     [0x178] = "@Single Player Modes/Adventure Mode/Sub 18:20 Clear",
     [0x179] = "@Single Player Modes/Adventure Mode/Hard-Continueless Clear",
     [0x17A] = "@Single Player Modes/Adventure Mode/Escape Brinstar",
+    [0x17B] = "@Single Player Modes/Adventure Mode/All Character Trophies",
     [0x17C] = "@Single Player Modes/Adventure Mode/Giga Bowser Continueless",
     [0x17D] = "@Single Player Modes/All-Star Mode/Clear",
     [0x17E] = "@Single Player Modes/All-Star Mode/Continueless Clear",
     [0x17F] = "@Single Player Modes/All-Star Mode/Hard Clear",
+    [0x180] = "@Single Player Modes/All-Star Mode/All Character Trophies",
     [0x181] = "@Single Player Modes/Classic Mode/5 Minute Clear",
     [0x182] = "@Single Player Modes/Classic Mode/Hard-Continueless Clear",
+    [0x183] = "@Single Player Modes/Classic Mode/All Character Trophies",
     [0x272] = "@Single Player Modes/Classic Mode/Game & Watch Clear",
 
     -- Multi-Man Melee

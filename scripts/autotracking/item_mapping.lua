@@ -81,8 +81,11 @@ ItemSettings = {
     GoalAllTargets = "targets_required",
     LotteryPoolMode = "lottery_pool_mode",
     Eventsanity = "event_checks",
+    HardModesClear = "hard_modes_clear",
+    AnnoyingMultiManChecks = "enable_annoying_multiman_checks",
     AllClassicTrophies = "all_classic_trophies",
-    AllAdventureTrophies = "all_adventure_trophies"
+    AllAdventureTrophies = "all_adventure_trophies",
+    AllAllStarTrophies = "all_allstar_trophies"
 }
 
 LotteryPoolMode = {

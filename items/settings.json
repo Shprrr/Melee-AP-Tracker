@@ -59,6 +59,18 @@
         "codes": "event_checks"
     },
     {
+        "name": "Hard Mode Clears",
+        "type": "toggle",
+        "img": "images/items/Hard.png",
+        "codes": "hard_modes_clear"
+    },
+    {
+        "name": "Annoying Multi-Man Checks",
+        "type": "toggle",
+        "img": "images/items/Multi-Man Melee.png",
+        "codes": "enable_annoying_multiman_checks"
+    },
+    {
         "name": "Classic Mode - All Character Trophies",
         "type": "toggle",
         "img": "images/items/Trophy Classic.png",
@@ -69,5 +81,11 @@
         "type": "toggle",
         "img": "images/items/Trophy Adventure.png",
         "codes": "all_adventure_trophies"
+    },
+    {
+        "name": "All-Star Mode - All Character Trophies",
+        "type": "toggle",
+        "img": "images/items/Trophy All-Star.png",
+        "codes": "all_allstar_trophies"
     }
 ]

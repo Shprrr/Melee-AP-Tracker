@@ -128,7 +128,7 @@ function HasAdventureMode()
     return has("Adventure Mode")
 end
 
-local function has_all_star_mode()
+function HasAllStarMode()
     return has("All-Star Mode")
 end
 
@@ -136,11 +136,11 @@ local function has_target_test()
     return has("Target Test")
 end
 
-local function has_home_run_contest()
+function HasHomeRunContest()
     return has("Home-Run Contest")
 end
 
-local function has_multi_man_melee()
+function HasMultiManMelee()
     return has("Multi-Man Melee")
 end
 
@@ -318,7 +318,7 @@ local function has_reflect_character()
 end
 
 -- Good home run contest characters (can get over 1,400 ft)
-local function has_good_hr_character()
+local function hasGoodHrCharacter()
     local good_hr_chars = {"Ganondorf", "Yoshi", "Jigglypuff", "Roy"}
 
     for _, char in ipairs(good_hr_chars) do
@@ -330,15 +330,14 @@ local function has_good_hr_character()
 end
 
 -- Decent home run contest characters (can get over 1,312 ft)
-local function has_decent_hr_character()
-    return has("Dr. Mario") or has_good_hr_character()
+local function hasDecentHrCharacter()
+    return has("Dr. Mario") or hasGoodHrCharacter()
 end
 
 -- Good combo characters
-local function has_good_combo_character()
-    local good_combo_chars = {"Kirby", "Fox", "Pichu", "Pikachu", "Zelda"}
-
-    for _, char in ipairs(good_combo_chars) do
+local goodComboChars = {"Kirby", "Fox", "Pichu", "Pikachu", "Zelda"}
+local function hasGoodComboCharacter()
+    for _, char in ipairs(goodComboChars) do
         if has(char) then
             return true
         end
@@ -346,9 +345,19 @@ local function has_good_combo_character()
     return false
 end
 
+local function hasAllGoodComboCharacter()
+    local hasGood = true
+    for _, char in ipairs(goodComboChars) do
+        if not has(char) then
+            hasGood = false
+        end
+    end
+    return hasGood
+end
+
 -- Decent combo characters
-local function has_decent_combo_character()
-    return has("Yoshi") or has("Falco") or has_good_combo_character()
+local function hasDecentComboCharacter()
+    return has("Yoshi") or has("Falco")
 end
 
 -- =====================================
@@ -361,6 +370,10 @@ end
 
 function HasAllAdventureTrophies()
     return hasCount("adventure_trophies", 26)
+end
+
+function HasAllAllStarTrophies()
+    return hasCount("allstar_trophies", 26)
 end
 
 local function has_birdo_trophy()
@@ -433,7 +446,7 @@ local function can_unlock_pichu()
 end
 
 local function can_unlock_falco()
-    return has_multi_man_melee()
+    return HasMultiManMelee()
 end
 
 local function can_unlock_marth()
@@ -461,7 +474,7 @@ local function can_unlock_roy()
 end
 
 local function can_unlock_mr_game_and_watch()
-    return has_everyone_except_gamewatch() and (HasAdventureMode() or has_all_star_mode() or HasClassicMode() or has_target_test())
+    return has_everyone_except_gamewatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or has_target_test())
 end
 
 -- =====================================
@@ -469,34 +482,29 @@ end
 -- =====================================
 
 -- Training mode combo requirements
-local function can_do_125_combos()
-    return has_good_combo_character() and has_bowser()
+function CanDo125Combos()
+    return hasAllGoodComboCharacter() and has_bowser()
 end
 
-local function can_do_10_hit_combo()
-    return has_decent_combo_character() and has_bowser()
+function CanDo10HitCombo()
+    return hasDecentComboCharacter() and has_bowser()
 end
 
-local function can_do_20_hit_combo()
-    return has_good_combo_character() and has_bowser()
+function CanDo20HitCombo()
+    return hasGoodComboCharacter() and has_bowser()
 end
 
 -- Home Run Contest requirements
-local function can_do_combined_distance()
+function CanDoCombinedDistance()
     return GroupUniqueCharacters16()
 end
 
-local function can_do_1312_feet()
-    return has_decent_hr_character()
+function CanDo1312Feet()
+    return hasDecentHrCharacter()
 end
 
-local function can_do_1476_feet()
-    return has_good_hr_character()
-end
-
--- All-Star mode specific requirements
-local function can_access_all_star()
-    return has_all_star_mode()
+function CanDo1476Feet()
+    return hasGoodHrCharacter()
 end
 
 -- Classic mode specific requirements
@@ -529,16 +537,16 @@ end
 
 -- Multi-KO bonuses (Adventure/All-Star have more enemies)
 local function can_get_quadruple_ko()
-    return HasAdventureMode() or has_all_star_mode()
+    return HasAdventureMode() or HasAllStarMode()
 end
 
 local function can_get_quintuple_ko()
-    return HasAdventureMode() or has_all_star_mode()
+    return HasAdventureMode() or HasAllStarMode()
 end
 
 -- All bonuses requirement (for Diskun trophy)
 local function can_get_all_bonuses()
-    return HasAdventureMode() and has_all_star_mode() and HasClassicMode() and
+    return HasAdventureMode() and HasAllStarMode() and HasClassicMode() and
            has_luigi() and has_meteor_character() and has_reflect_character()
 end
 
@@ -659,7 +667,7 @@ local function can_get_classic_trophy(character)
 end
 
 local function can_get_allstar_trophy(character)
-    return has(character) and has_all_star_mode()
+    return has(character) and HasAllStarMode()
 end
 
 -- Special trophy requirements
