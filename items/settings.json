@@ -71,6 +71,18 @@
         "codes": "enable_annoying_multiman_checks"
     },
     {
+        "name": "Target Clear Checks",
+        "type": "toggle",
+        "img": "images/items/Target.png",
+        "codes": "target_checks"
+    },
+    {
+        "name": "Long Target Test Checks",
+        "type": "toggle",
+        "img": "images/items/Targets.png",
+        "codes": "long_targettest_checks"
+    },
+    {
         "name": "Classic Mode - All Character Trophies",
         "type": "toggle",
         "img": "images/items/Trophy Classic.png",

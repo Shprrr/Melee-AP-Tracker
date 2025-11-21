@@ -4,51 +4,53 @@
     "short_name": "Target Test",
     "chest_unopened_img": "images/items/closed.png",
     "chest_opened_img": "images/items/open.png",
-    "access_rules": ["Target Test"],
+    "access_rules": ["$HasTargetTest"],
+    "visibility_rules": ["targets_required", "target_checks", "long_targettest_checks"],
     "children": [
       {
         "name": "Starting Characters",
         "access_rules": [],
+        "visibility_rules": ["targets_required", "target_checks"],
         "sections": [
           {
             "name": "Mario",
-            "access_rules": ["Mario"]
+            "access_rules": ["$CanDoTargetTest|Mario"]
           },
           {
             "name": "Donkey Kong",
-            "access_rules": ["Donkey Kong"]
+            "access_rules": ["$CanDoTargetTest|Donkey Kong"]
           },
           {
             "name": "Link",
-            "access_rules": ["Link"]
+            "access_rules": ["$CanDoTargetTest|Link"]
           },
           {
             "name": "Samus",
-            "access_rules": ["Samus"]
+            "access_rules": ["$CanDoTargetTest|Samus"]
           },
           {
             "name": "Yoshi",
-            "access_rules": ["Yoshi"]
+            "access_rules": ["$CanDoTargetTest|Yoshi"]
           },
           {
             "name": "Kirby",
-            "access_rules": ["Kirby"]
+            "access_rules": ["$CanDoTargetTest|Kirby"]
           },
           {
             "name": "Fox",
-            "access_rules": ["Fox"]
+            "access_rules": ["$CanDoTargetTest|Fox"]
           },
           {
             "name": "Pikachu",
-            "access_rules": ["Pikachu"]
+            "access_rules": ["$CanDoTargetTest|Pikachu"]
           },
           {
             "name": "Ness",
-            "access_rules": ["Ness"]
+            "access_rules": ["$CanDoTargetTest|Ness"]
           },
           {
             "name": "Captain Falcon",
-            "access_rules": ["Captain Falcon"]
+            "access_rules": ["$CanDoTargetTest|Captain Falcon"]
           }
         ],
         "map_locations": [
@@ -62,66 +64,67 @@
       {
         "name": "Secret Characters",
         "access_rules": [],
+        "visibility_rules": ["targets_required", "target_checks"],
         "sections": [
           {
             "name": "Bowser",
-            "access_rules": ["Bowser"]
+            "access_rules": ["$CanDoTargetTest|Bowser"]
           },
           {
             "name": "Peach",
-            "access_rules": ["Peach"]
+            "access_rules": ["$CanDoTargetTest|Peach"]
           },
           {
             "name": "Ice Climbers",
-            "access_rules": ["Ice Climbers"]
+            "access_rules": ["$CanDoTargetTest|Ice Climbers"]
           },
           {
             "name": "Zelda",
-            "access_rules": ["Zelda"]
+            "access_rules": ["$CanDoTargetTest|Zelda"]
           },
           {
             "name": "Luigi",
-            "access_rules": ["Luigi"]
+            "access_rules": ["$CanDoTargetTest|Luigi"]
           },
           {
             "name": "Jigglypuff",
-            "access_rules": ["Jigglypuff"]
+            "access_rules": ["$CanDoTargetTest|Jigglypuff"]
           },
           {
             "name": "Mewtwo",
-            "access_rules": ["Mewtwo"]
+            "access_rules": ["$CanDoTargetTest|Mewtwo"]
           },
           {
             "name": "Mr. Game & Watch",
-            "access_rules": ["Mr. Game & Watch"]
+            "access_rules": ["$CanDoTargetTest|Mr. Game & Watch"]
           },
           {
             "name": "Marth",
-            "access_rules": ["Marth"]
+            "access_rules": ["$CanDoTargetTest|Marth"]
           },
           {
             "name": "Roy",
-            "access_rules": ["Roy"]
+            "access_rules": ["$CanDoTargetTest|Roy"]
           },
           {
             "name": "Dr. Mario",
-            "access_rules": ["Dr. Mario"]
+            "access_rules": ["$CanDoTargetTest|Dr. Mario"]
           },
           {
             "name": "Ganondorf",
-            "access_rules": ["Ganondorf"]
+            "access_rules": ["$CanDoTargetTest|Ganondorf"]
           },
           {
             "name": "Falco",
-            "access_rules": ["Falco"]
+            "access_rules": ["$CanDoTargetTest|Falco"]
           },
           {
             "name": "Young Link",
-            "access_rules": ["Young Link"]
+            "access_rules": ["$CanDoTargetTest|Young Link"]
           },
           {
             "name": "Pichu",
-            "access_rules": ["Pichu"]
+            "access_rules": ["$CanDoTargetTest|Pichu"]
           }
         ],
         "map_locations": [
@@ -135,18 +138,19 @@
       {
         "name": "Target Test Challenges",
         "access_rules": [],
+        "visibility_rules": ["long_targettest_checks"],
         "sections": [
           {
             "name": "All Characters, Sub 12:30 Total Time",
-            "access_rules": ["$GroupUniqueCharacters25"]
+            "access_rules": ["$CanDoAllTargets"]
           },
           {
             "name": "All Characters",
-            "access_rules": ["$GroupUniqueCharacters25"]
+            "access_rules": ["$CanDoAllTargets"]
           },
           {
             "name": "All Characters, Sub 25 Minutes Total Time",
-            "access_rules": ["$GroupUniqueCharacters25"]
+            "access_rules": ["$CanDoAllTargets"]
           }
         ],
         "map_locations": [

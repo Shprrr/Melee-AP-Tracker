@@ -132,7 +132,7 @@ function HasAllStarMode()
     return has("All-Star Mode")
 end
 
-local function has_target_test()
+function HasTargetTest()
     return has("Target Test")
 end
 
@@ -474,7 +474,7 @@ local function can_unlock_roy()
 end
 
 local function can_unlock_mr_game_and_watch()
-    return has_everyone_except_gamewatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or has_target_test())
+    return has_everyone_except_gamewatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or HasTargetTest())
 end
 
 -- =====================================
@@ -555,13 +555,13 @@ end
 -- =====================================
 
 -- Individual character target tests
-local function can_do_target_test(character)
-    return has(character) and has_target_test()
+function CanDoTargetTest(character)
+    return has(character) and HasTargetTest()
 end
 
 -- Target test challenges requiring all characters
-local function can_do_all_targets()
-    return GroupUniqueCharacters25() and has_target_test()
+function CanDoAllTargets()
+    return GroupUniqueCharacters25() and HasTargetTest()
 end
 
 -- =====================================

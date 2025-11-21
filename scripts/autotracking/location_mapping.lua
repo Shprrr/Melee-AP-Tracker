@@ -164,15 +164,15 @@ LOCATION_TO_TRACKER_MAP = {
     [0x1A3] = "@Single Player Modes/Multi Man Melee/Endless Melee 100 KO's",
 
     -- Training Mode
-    [0x1AA] = "@Single Player Modes/Training Mode/Training Mode - 125 Combined Combos",
-    [0x1AB] = "@Single Player Modes/Training Mode/Training Mode - 10-Hit Combo",
-    [0x1AC] = "@Single Player Modes/Training Mode/Training Mode - 20-Hit Combo",
+    [0x1AA] = "@Single Player Modes/Training Mode/125 Combined Combos",
+    [0x1AB] = "@Single Player Modes/Training Mode/10-Hit Combo",
+    [0x1AC] = "@Single Player Modes/Training Mode/20-Hit Combo",
 
     -- Home-Run Contest
-    [0x1AD] = "@Single Player Modes/Home-Run Contest/Home-Run Contest - 16,404 Ft. Combined",
-    [0x1AE] = "@Single Player Modes/Home-Run Contest/Home-Run Contest - 984 Ft.",
-    [0x1AF] = "@Single Player Modes/Home-Run Contest/Home-Run Contest - 1,312 Ft.",
-    [0x1B0] = "@Single Player Modes/Home-Run Contest/Home-Run Contest - 1,476 Ft.",
+    [0x1AD] = "@Single Player Modes/Home-Run Contest/16,404 Ft. Combined",
+    [0x1AE] = "@Single Player Modes/Home-Run Contest/984 Ft.",
+    [0x1AF] = "@Single Player Modes/Home-Run Contest/1,312 Ft.",
+    [0x1B0] = "@Single Player Modes/Home-Run Contest/1,476 Ft.",
 
     -- =====================================
     -- TARGET TEST
