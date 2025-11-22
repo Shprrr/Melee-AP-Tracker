@@ -211,17 +211,17 @@ LOCATION_TO_TRACKER_MAP = {
     -- =====================================
     -- CHARACTER UNLOCKS
     -- =====================================
-    [0x1B9] = "@Character Unlocks/Secret Character Unlock Matches/Jigglypuff Unlock Match",
-    [0x1BA] = "@Character Unlocks/Secret Character Unlock Matches/Dr. Mario Unlock Match",
-    [0x1BB] = "@Character Unlocks/Secret Character Unlock Matches/Pichu Unlock Match",
-    [0x1BC] = "@Character Unlocks/Secret Character Unlock Matches/Falco Unlock Match",
-    [0x1BD] = "@Character Unlocks/Secret Character Unlock Matches/Marth Unlock Match",
-    [0x1BE] = "@Character Unlocks/Secret Character Unlock Matches/Young Link Unlock Match",
-    [0x1BF] = "@Character Unlocks/Secret Character Unlock Matches/Ganondorf Unlock Match",
-    [0x1C0] = "@Character Unlocks/Secret Character Unlock Matches/Mewtwo Unlock Match",
-    [0x1C1] = "@Character Unlocks/Secret Character Unlock Matches/Luigi Unlock Match",
-    [0x1C2] = "@Character Unlocks/Secret Character Unlock Matches/Roy Unlock Match",
-    [0x1C3] = "@Character Unlocks/Secret Character Unlock Matches/Game & Watch Unlock Match",
+    [0x1B9] = "@Character Unlocks/Secret Character Unlock Matches/Jigglypuff Unlock Match (Classic, Adventure, All-Star)",
+    [0x1BA] = "@Character Unlocks/Secret Character Unlock Matches/Dr. Mario Unlock Match (Classic, Adventure, All-Star w\u{2215} Mario w\u{2215}o continues)",
+    [0x1BB] = "@Character Unlocks/Secret Character Unlock Matches/Pichu Unlock Match (Event 37)",
+    [0x1BC] = "@Character Unlocks/Secret Character Unlock Matches/Falco Unlock Match (100-Man Melee)",
+    [0x1BD] = "@Character Unlocks/Secret Character Unlock Matches/Marth Unlock Match (Use starter characters)",
+    [0x1BE] = "@Character Unlocks/Secret Character Unlock Matches/Young Link Unlock Match (Classic, Adventure, All-Star w\u{2215} 10 characters)",
+    [0x1BF] = "@Character Unlocks/Secret Character Unlock Matches/Ganondorf Unlock Match (Event 29)",
+    [0x1C0] = "@Character Unlocks/Secret Character Unlock Matches/Mewtwo Unlock Match (1 total hour of VS)",
+    [0x1C1] = "@Character Unlocks/Secret Character Unlock Matches/Luigi Unlock Match (Adventure Stage 1 timer end 2 sec and defeat less 1 min)",
+    [0x1C2] = "@Character Unlocks/Secret Character Unlock Matches/Roy Unlock Match (Classic, Adventure, All-Star w\u{2215} Marth w\u{2215}o continues)",
+    [0x1C3] = "@Character Unlocks/Secret Character Unlock Matches/Game & Watch Unlock Match (Classic, Adventure, All-Star, Target Test w\u{2215} all other characters)",
 
 
     -- =====================================

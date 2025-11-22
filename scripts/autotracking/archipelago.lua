@@ -366,6 +366,7 @@ local function onClear(slot_data)
     Tracker:FindObjectForCode(ItemSettings.AnnoyingMultiManChecks).Active = allLocations[0x1A0] or false -- Multi-Man Melee - 15 Minute Melee Clear
     Tracker:FindObjectForCode(ItemSettings.TargetClearChecks).Active = allLocations[0x184] or false -- Target Test - Mario
     Tracker:FindObjectForCode(ItemSettings.LongTargetTestChecks).Active = allLocations[0x19D] or false -- Target Test - All Characters, Sub 12:30 Total Time
+    Tracker:FindObjectForCode(ItemSettings.MewtwoUnlockCheck).Active = allLocations[0x1C0] or false -- Melee - Mewtwo Unlock Match
     Tracker:FindObjectForCode(ItemSettings.AllClassicTrophies).Active = allLocations[0x183] or false -- Classic Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAdventureTrophies).Active = allLocations[0x17B] or false -- Adventure Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAllStarTrophies).Active = allLocations[0x180] or false -- All-Star Mode - All Character Trophies

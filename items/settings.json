@@ -83,6 +83,12 @@
         "codes": "long_targettest_checks"
     },
     {
+        "name": "Mewtwo Check (1 total hour of VS)",
+        "type": "toggle",
+        "img": "images/items/Mewtwo.png",
+        "codes": "mewtwo_unlock_check"
+    },
+    {
         "name": "Classic Mode - All Character Trophies",
         "type": "toggle",
         "img": "images/items/Trophy Classic.png",

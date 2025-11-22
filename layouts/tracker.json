@@ -149,7 +149,7 @@
                 "h_alignment": "left",
                 "rows": [
                         ["event_checks", "hard_modes_clear", "enable_annoying_multiman_checks"],
-                        ["target_checks", "long_targettest_checks"],
+                        ["target_checks", "long_targettest_checks", "mewtwo_unlock_check"],
                         ["all_classic_trophies", "all_adventure_trophies", "all_allstar_trophies"]
                     ]
             }

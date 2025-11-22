@@ -85,6 +85,7 @@ ItemSettings = {
     AnnoyingMultiManChecks = "enable_annoying_multiman_checks",
     TargetClearChecks = "target_checks",
     LongTargetTestChecks = "long_targettest_checks",
+    MewtwoUnlockCheck = "mewtwo_unlock_check",
     AllClassicTrophies = "all_classic_trophies",
     AllAdventureTrophies = "all_adventure_trophies",
     AllAllStarTrophies = "all_allstar_trophies"

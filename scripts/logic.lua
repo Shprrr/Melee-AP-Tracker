@@ -193,7 +193,7 @@ end
 -- =====================================
 
 -- Base characters (14 total)
-local function has_all_base_characters()
+local function hasAllBaseCharacters()
     return has_mario() and has_donkey_kong() and has_bowser() and has_peach() and
            has_captain_falcon() and has_yoshi() and has_fox() and has_ness() and
            has_ice_climbers() and has_kirby() and has_samus() and has_link() and
@@ -201,14 +201,14 @@ local function has_all_base_characters()
 end
 
 -- All secret characters
-local function has_all_secret_characters()
+local function hasAllSecretCharacters()
     return has_luigi() and has_jigglypuff() and has_mewtwo() and has_mr_game_and_watch() and
            has_marth() and has_roy() and has_pichu() and has_ganondorf() and
            has_dr_mario() and has_young_link() and has_falco()
 end
 
 -- Everyone except Game & Watch (needed for Mr. Game & Watch unlock)
-local function has_everyone_except_gamewatch()
+local function hasEveryoneExceptGameWatch()
     return has_dr_mario() and has_mario() and has_luigi() and has_bowser() and
            has_peach() and has_yoshi() and has_donkey_kong() and has_captain_falcon() and
            has_ganondorf() and has_falco() and has_fox() and has_ness() and
@@ -433,48 +433,48 @@ end
 -- =====================================
 
 -- Character unlock conditions based on the rules
-local function can_unlock_jigglypuff()
-    return true -- Any 1P mode
+function CanUnlockJigglypuff()
+    return HasClassicMode() or HasAdventureMode() or HasAllStarMode() -- Any 1P mode
 end
 
-local function can_unlock_dr_mario()
-    return has_mario()
+function CanUnlockDrMario()
+    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and has_mario()
 end
 
-local function can_unlock_pichu()
-    return true -- Event matches
+function CanUnlockPichu()
+    return Events31To39Available() -- Event 37: Legendary Pokémon
 end
 
-local function can_unlock_falco()
+function CanUnlockFalco()
     return HasMultiManMelee()
 end
 
-local function can_unlock_marth()
-    return has_all_base_characters()
+function CanUnlockMarth()
+    return hasAllBaseCharacters()
 end
 
-local function can_unlock_young_link()
-    return GroupUniqueCharacters10()
+function CanUnlockYoungLink()
+    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and GroupUniqueCharacters10()
 end
 
-local function can_unlock_ganondorf()
-    return has_link()
+function CanUnlockGanondorf()
+    return Events26To29Available() and CanDoTriforceGathering()
 end
 
-local function can_unlock_mewtwo()
+function CanUnlockMewtwo()
     return true -- VS matches or time
 end
 
-local function can_unlock_luigi()
+function CanUnlockLuigi()
     return HasAdventureMode()
 end
 
-local function can_unlock_roy()
-    return has_marth()
+function CanUnlockRoy()
+    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and has_marth()
 end
 
-local function can_unlock_mr_game_and_watch()
-    return has_everyone_except_gamewatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or HasTargetTest())
+function CanUnlockMrGameWatch()
+    return hasEveryoneExceptGameWatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or HasTargetTest())
 end
 
 -- =====================================
@@ -658,15 +658,15 @@ end
 -- =====================================
 
 -- Character trophy unlocks require having the character AND the mode
-local function can_get_adventure_trophy(character)
-    return has(character) and HasAdventureMode()
-end
-
-local function can_get_classic_trophy(character)
+function CanGetClassicTrophy(character)
     return has(character) and HasClassicMode()
 end
 
-local function can_get_allstar_trophy(character)
+function CanGetAdventureTrophy(character)
+    return has(character) and HasAdventureMode()
+end
+
+function CanGetAllStarTrophy(character)
     return has(character) and HasAllStarMode()
 end
 
