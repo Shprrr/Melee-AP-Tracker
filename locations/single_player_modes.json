@@ -211,19 +211,19 @@
             "name": "125 Combined Combos",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["$CanDo125Combos"]
+            "access_rules": ["$CanDo125Combos,[$TrainingModeOptional]"]
           },
           {
             "name": "10-Hit Combo",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["$CanDo10HitCombo"]
+            "access_rules": ["$CanDo10HitCombo,[$TrainingModeOptional]"]
           },
           {
             "name": "20-Hit Combo",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
-            "access_rules": ["$CanDo20HitCombo"]
+            "access_rules": ["$CanDo20HitCombo,[$TrainingModeOptional]"]
           }
         ],
         "map_locations": [

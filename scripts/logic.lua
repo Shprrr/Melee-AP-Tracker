@@ -482,16 +482,20 @@ end
 -- =====================================
 
 -- Training mode combo requirements
+function TrainingModeOptional()
+    return has_bowser()
+end
+
 function CanDo125Combos()
-    return hasAllGoodComboCharacter() and has_bowser()
+    return hasAllGoodComboCharacter()
 end
 
 function CanDo10HitCombo()
-    return hasDecentComboCharacter() and has_bowser()
+    return hasDecentComboCharacter()
 end
 
 function CanDo20HitCombo()
-    return hasGoodComboCharacter() and has_bowser()
+    return hasGoodComboCharacter()
 end
 
 -- Home Run Contest requirements
