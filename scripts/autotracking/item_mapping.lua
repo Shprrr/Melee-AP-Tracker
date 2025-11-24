@@ -88,7 +88,8 @@ ItemSettings = {
     MewtwoUnlockCheck = "mewtwo_unlock_check",
     AllClassicTrophies = "all_classic_trophies",
     AllAdventureTrophies = "all_adventure_trophies",
-    AllAllStarTrophies = "all_allstar_trophies"
+    AllAllStarTrophies = "all_allstar_trophies",
+    Use250TrophyPool = "use_250_trophy_pool"
 }
 
 LotteryPoolMode = {

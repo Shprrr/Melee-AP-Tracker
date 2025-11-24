@@ -47,9 +47,9 @@
         "initial_stage_idx": 1,
         "allow_disabled": false,
         "stages": [
-            {"name": "Vanilla", "img": "images/items/Lottery Pool Mode Vanilla.png", "codes": "lottery_pool_mode,lottery_pool_mode_vanilla"},
-            {"name": "Progressive", "img": "images/items/Lottery Pool Mode Progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_progressive"},
-            {"name": "Non-progressive", "img": "images/items/Lottery Pool Mode Non-progressive.png", "codes": "lottery_pool_mode,lottery_pool_mode_static"}
+            {"name": "Vanilla", "img": "images/items/Lottery Pool Mode Vanilla.png", "inherit_codes": false, "codes": "lottery_pool_mode,lottery_pool_mode_vanilla"},
+            {"name": "Progressive", "img": "images/items/Lottery Pool Mode Progressive.png", "inherit_codes": false, "codes": "lottery_pool_mode,lottery_pool_mode_progressive"},
+            {"name": "Non-progressive", "img": "images/items/Lottery Pool Mode Non-progressive.png", "inherit_codes": false, "codes": "lottery_pool_mode,lottery_pool_mode_static"}
         ]
     },
     {
@@ -105,5 +105,11 @@
         "type": "toggle",
         "img": "images/items/Trophy All-Star.png",
         "codes": "all_allstar_trophies"
+    },
+    {
+        "name": "Use the 250 Trophies Pool",
+        "type": "toggle",
+        "img": "images/items/Trophy 250.png",
+        "codes": "use_250_trophy_pool"
     }
 ]

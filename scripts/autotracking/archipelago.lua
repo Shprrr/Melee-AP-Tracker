@@ -370,6 +370,7 @@ local function onClear(slot_data)
     Tracker:FindObjectForCode(ItemSettings.AllClassicTrophies).Active = allLocations[0x183] or false -- Classic Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAdventureTrophies).Active = allLocations[0x17B] or false -- Adventure Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAllStarTrophies).Active = allLocations[0x180] or false -- All-Star Mode - All Character Trophies
+    Tracker:FindObjectForCode(ItemSettings.Use250TrophyPool).Active = allLocations[0x25C] or false -- Lottery (250 Trophies) - GCN
 
     -- Reset all items
     for _, mapping_entry in pairs(ITEM_MAPPING) do

@@ -374,14 +374,14 @@
     },
     {
         "name": "Progressive Lottery Pool",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "initial_stage_idx": 0,
-        "initial_active_state": true,
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "Initial Lottery Pool",
                 "img": "images/items/Lotto1.png",
-                "codes": "Lottery1, Lottery"
+                "codes": "Lottery1"
             },
             {
                 "name": "1 Lottery Pool Upgrade",

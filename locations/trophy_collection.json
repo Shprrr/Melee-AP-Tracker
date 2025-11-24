@@ -7,8 +7,8 @@
     "access_rules": [],
     "children": [
       {
-        "name": "Lottery Base",
-        "access_rules": [],
+        "name": "Lottery Base A to B",
+        "access_rules": ["$HasBaseLottery"],
         "sections": [
           {
             "name": "Andross (64)"
@@ -41,13 +41,32 @@
             "name": "Bob-omb"
           },
           {
+            "name": "Bubbles"
+          },
+          {
             "name": "Bucket"
           },
           {
             "name": "Bulbasaur"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 50,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery Base C to E",
+        "access_rules": ["$HasBaseLottery"],
+        "sections": [
           {
             "name": "Capsule"
+          },
+          {
+            "name": "Chansey"
           },
           {
             "name": "Chikorita"
@@ -71,6 +90,9 @@
             "name": "Daisy"
           },
           {
+            "name": "Dixie Kong"
+          },
+          {
             "name": "Donbe & Hikari"
           },
           {
@@ -83,13 +105,35 @@
             "name": "Ducks"
           },
           {
+            "name": "Eevee"
+          },
+          {
             "name": "Egg"
           },
           {
-            "name": "Excitebike"
+            "name": "Eggplant Man"
           },
           {
+            "name": "Excitebike"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 50,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Lottery Base F to L",
+        "access_rules": ["$HasBaseLottery"],
+        "sections": [
+          {
             "name": "Fan"
+          },
+          {
+            "name": "Fighter Kirby"
           },
           {
             "name": "Fire Flower"
@@ -113,6 +157,9 @@
             "name": "Igglybuff"
           },
           {
+            "name": "Jeff"
+          },
+          {
             "name": "Jody Summer"
           },
           {
@@ -132,12 +179,31 @@
           },
           {
             "name": "Lakitu"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 50,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Lottery Base M to R",
+        "access_rules": ["$HasBaseLottery"],
+        "sections": [
+          {
+            "name": "Maruo Maruhige"
           },
           {
             "name": "Metal Mario"
           },
           {
             "name": "Metroid"
+          },
+          {
+            "name": "Misty"
           },
           {
             "name": "Monster"
@@ -155,6 +221,9 @@
             "name": "Porygon2"
           },
           {
+            "name": "Professor Oak"
+          },
+          {
             "name": "Racing Kart"
           },
           {
@@ -164,6 +233,12 @@
             "name": "Ray Gun"
           },
           {
+            "name": "Ray Mk II"
+          },
+          {
+            "name": "Red Shell"
+          },
+          {
             "name": "Rick"
           },
           {
@@ -171,7 +246,20 @@
           },
           {
             "name": "Ryota Hayami"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 50,
+            "y": 200
+          }
+        ]
+      },
+      {
+        "name": "Lottery Base S to Z",
+        "access_rules": ["$HasBaseLottery"],
+        "sections": [
           {
             "name": "Scizor"
           },
@@ -225,55 +313,19 @@
           },
           {
             "name": "ZERO-ONE"
-          },
-          {
-            "name": "Bubbles"
-          },
-          {
-            "name": "Chansey"
-          },
-          {
-            "name": "Dixie Kong"
-          },
-          {
-            "name": "Eevee"
-          },
-          {
-            "name": "Eggplant Man"
-          },
-          {
-            "name": "Fighter Kirby"
-          },
-          {
-            "name": "Jeff"
-          },
-          {
-            "name": "Maruo Maruhige"
-          },
-          {
-            "name": "Misty"
-          },
-          {
-            "name": "Professor Oak"
-          },
-          {
-            "name": "Ray Mk II"
-          },
-          {
-            "name": "Red Shell"
           }
         ],
         "map_locations": [
           {
             "map": "trophy_collection",
             "x": 50,
-            "y": 50
+            "y": 250
           }
         ]
       },
       {
-        "name": "Any Main 1-P (No All-Star)",
-        "access_rules": ["classic_or_adventure_clear"],
+        "name": "Any Main 1-P (No All-Star) A to O",
+        "access_rules": ["$HasClassicMode", "$HasAdventureMode"],
         "sections": [
           {
             "name": "Ayumi Tachibana"
@@ -325,7 +377,20 @@
           },
           {
             "name": "Octorok"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 100,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Any Main 1-P (No All-Star) P to Z",
+        "access_rules": ["$HasClassicMode", "$HasAdventureMode"],
+        "sections": [
           {
             "name": "Parasol"
           },
@@ -361,13 +426,13 @@
           {
             "map": "trophy_collection",
             "x": 100,
-            "y": 50
+            "y": 100
           }
         ]
       },
       {
-        "name": "Lottery Adventure-Classic Clear",
-        "access_rules": ["classic_and_adventure_clear"],
+        "name": "Lottery Adventure-Classic Clear A to S",
+        "access_rules": ["$HasAdventureClassicLottery"],
         "sections": [
           {
             "name": "Arwing"
@@ -425,7 +490,20 @@
           },
           {
             "name": "Suicune"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "trophy_collection",
+            "x": 150,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Lottery Adventure-Classic Clear T to Z",
+        "access_rules": ["$HasAdventureClassicLottery"],
+        "sections": [
           {
             "name": "Tingle"
           },
@@ -443,13 +521,13 @@
           {
             "map": "trophy_collection",
             "x": 150,
-            "y": 50
+            "y": 100
           }
         ]
       },
       {
         "name": "Lottery 200 Vs. Matches",
-        "access_rules": ["vs_matches_5"],
+        "access_rules": ["$HasVsMatchesLottery"],
         "sections": [
           {
             "name": "Andross"
@@ -510,7 +588,7 @@
       },
       {
         "name": "Lottery Secret Characters",
-        "access_rules": ["secret_characters_unlocked"],
+        "access_rules": ["$HasSecretCharacterLottery"],
         "sections": [
           {
             "name": "Alpha"
@@ -553,7 +631,8 @@
       },
       {
         "name": "Lottery 250 Trophies",
-        "access_rules": ["trophies_250"],
+        "access_rules": ["$Has250TrophyLottery"],
+        "visibility_rules": ["$IsVisible250TrophyLottery"],
         "sections": [
           {
             "name": "GCN"

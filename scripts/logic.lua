@@ -6,8 +6,16 @@ local function has(item)
 end
 
 local function hasCount(item, amount)
-    local count = Tracker:ProviderCountForCode(item)
-    return count >= amount
+    local object = Tracker:FindObjectForCode(item)
+    if object == nil then
+        return false
+    end
+
+    if object.Type == "consumable" then
+        return object.AcquiredCount >= amount
+    else
+        return object.CurrentStage >= amount
+    end
 end
 
 -- =====================================
@@ -400,24 +408,48 @@ end
 -- LOTTERY POOL ACCESS
 -- =====================================
 
-local function has_base_lottery()
-    return has("Progressive Lottery Pool")
+function HasBaseLottery()
+    return true
 end
 
-local function has_adventure_classic_lottery()
-    return has("Lottery Pool Upgrade (Adventure/Classic Clear)")
+function HasAdventureClassicLottery()
+    if has("lottery_pool_mode_vanilla") then
+        return HasClassicMode() and HasAdventureMode()
+    else
+        return hasCount("Lottery", 1) or has("Lottery Adventure+Classic")
+    end
 end
 
-local function has_secret_character_lottery()
-    return has("Lottery Pool Upgrade (Secret Characters)")
+function HasVsMatchesLottery()
+    if has("lottery_pool_mode_vanilla") then
+        return true
+    else
+        return hasCount("Lottery", 2) or has("Lottery200VS")
+    end
 end
 
-local function has_vs_matches_lottery()
-    return has("Lottery Pool Upgrade (200 Vs. Matches)")
+function HasSecretCharacterLottery()
+    if has("lottery_pool_mode_vanilla") then
+        return hasAllSecretCharacters()
+    else
+        return hasCount("Lottery", 3) or has("LotterySecret")
+    end
 end
 
-local function has_250_trophy_lottery()
-    return has("Lottery Pool Upgrade (250 Trophies)")
+function IsVisible250TrophyLottery()
+    if has("lottery_pool_mode_vanilla") then
+        return has("use_250_trophy_pool")
+    else
+        return true
+    end
+end
+
+function Has250TrophyLottery()
+    if has("lottery_pool_mode_vanilla") then
+        return hasCount("total_trophies", 250)
+    else
+        return hasCount("Lottery", 4) or has("Lottery250")
+    end
 end
 
 -- =====================================
@@ -727,7 +759,7 @@ end
 
 -- Check if player has access to lottery system
 local function has_lottery_access()
-    return has_base_lottery()
+    return HasBaseLottery()
 end
 
 -- Check if player can access special Pikmin content
