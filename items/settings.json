@@ -53,6 +53,24 @@
         ]
     },
     {
+        "name": "Bonus-sanity",
+        "type": "toggle",
+        "img": "images/items/Special Bonus.png",
+        "codes": "bonus_checks"
+    },
+    {
+        "name": "Hard Bonus Checks",
+        "type": "toggle",
+        "img": "images/items/Hard.png",
+        "codes": "enable_hard_bonuses"
+    },
+    {
+        "name": "Extreme Bonus Checks",
+        "type": "toggle",
+        "img": "images/items/Extreme.png",
+        "codes": "enable_extreme_bonuses"
+    },
+    {
         "name": "Eventsanity",
         "type": "toggle",
         "img": "images/items/Event.png",
@@ -67,7 +85,7 @@
     {
         "name": "Annoying Multi-Man Checks",
         "type": "toggle",
-        "img": "images/items/Multi-Man Melee.png",
+        "img": "images/items/Multi-Man Melee2.png",
         "codes": "enable_annoying_multiman_checks"
     },
     {
@@ -87,6 +105,12 @@
         "type": "toggle",
         "img": "images/items/Mewtwo.png",
         "codes": "mewtwo_unlock_check"
+    },
+    {
+        "name": "Pokemon Bonus Checks",
+        "type": "toggle",
+        "img": "images/items/Trophy Mew Celebi.png",
+        "codes": "enable_rare_pokemon_checks"
     },
     {
         "name": "Classic Mode - All Character Trophies",

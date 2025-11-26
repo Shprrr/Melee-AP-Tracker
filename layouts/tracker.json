@@ -148,8 +148,9 @@
                 "item_size": "50, 50",
                 "h_alignment": "left",
                 "rows": [
+                        ["bonus_checks", "enable_hard_bonuses", "enable_extreme_bonuses"],
                         ["event_checks", "hard_modes_clear", "enable_annoying_multiman_checks"],
-                        ["target_checks", "long_targettest_checks", "mewtwo_unlock_check"],
+                        ["target_checks", "long_targettest_checks", "mewtwo_unlock_check", "enable_rare_pokemon_checks"],
                         ["all_classic_trophies", "all_adventure_trophies", "all_allstar_trophies", "use_250_trophy_pool"]
                     ]
             }

@@ -4,10 +4,10 @@
     "short_name": "Bonuses",
     "chest_unopened_img": "images/closed.png",
     "chest_opened_img": "images/open.png",
-    "access_rules": [],
+    "visibility_rules": ["bonus_checks"],
     "children": [
       {
-        "name": "Combat Bonuses",
+        "name": "Combat Bonuses 1",
         "access_rules": [],
         "sections": [
           {
@@ -69,6 +69,23 @@
           },
           {
             "name": "Fists of Fury"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 50,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Combat Bonuses 2",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Close Call",
+            "visibility_rules": ["enable_hard_bonuses"]
           },
           {
             "name": "Opportunist"
@@ -126,7 +143,20 @@
           },
           {
             "name": "Center Stage"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 50,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Combat Bonuses 3",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Pacifist"
           },
@@ -156,12 +186,12 @@
           {
             "map": "bonus_achievements",
             "x": 50,
-            "y": 50
+            "y": 150
           }
         ]
       },
       {
-        "name": "Movement and Positioning Bonuses",
+        "name": "Movement and Positioning Bonuses 1",
         "access_rules": [],
         "sections": [
           {
@@ -175,6 +205,22 @@
           },
           {
             "name": "All Aerial"
+          },
+          {
+            "name": "All Variations",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "All on One",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Lethal Weapon",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Climactic Clash",
+            "visibility_rules": ["enable_extreme_bonuses"]
           },
           {
             "name": "Bird of Prey"
@@ -195,14 +241,44 @@
             "name": "Clean Sweep"
           },
           {
-            "name": "Meteor Smash"
+            "name": "Meteor Smash",
+            "access_rules": ["$CanGetMeteorBonus"]
           },
           {
-            "name": "Meteor Clear"
+            "name": "Meteor Clear",
+            "access_rules": ["$HasAnyMain1P,$CanGetMeteorBonus"]
+          },
+          {
+            "name": "Meteor Master",
+            "access_rules": ["$CanGetMeteorBonus"],
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Meteor Survivor",
+            "access_rules": ["$CanGetMeteorBonus"],
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Flying Meteor",
+            "access_rules": ["$CanGetMeteorBonus"],
+            "visibility_rules": ["enable_hard_bonuses"]
           },
           {
             "name": "Aerialist"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 100,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Movement and Positioning Bonuses 2",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Acrobat"
           },
@@ -222,7 +298,8 @@
             "name": "Compass Tosser"
           },
           {
-            "name": "Throw Down"
+            "name": "Throw Down",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
             "name": "Stiff Knees"
@@ -262,15 +339,45 @@
           },
           {
             "name": "Life on the Edge"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 100,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Movement and Positioning Bonuses 3",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Poser"
+          },
+          {
+            "name": "Poser Poseur",
+            "access_rules": ["$CanGetPoserBonus"],
+            "visibility_rules": ["enable_hard_bonuses"]
           },
           {
             "name": "Poser Power"
           },
           {
+            "name": "Pose Breaker",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
             "name": "Instant Poser"
+          },
+          {
+            "name": "Control Freak",
+            "visibility_rules": ["enable_extreme_bonuses"]
+          },
+          {
+            "name": "Button Masher",
+            "visibility_rules": ["enable_extreme_bonuses"]
           },
           {
             "name": "Button Holder"
@@ -294,6 +401,14 @@
             "name": "Cliffhanger"
           },
           {
+            "name": "Power Shielder",
+            "visibility_rules": ["enable_extreme_bonuses"]
+          },
+          {
+            "name": "Shield Buster",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
             "name": "Shattered Shield"
           },
           {
@@ -307,12 +422,12 @@
           {
             "map": "bonus_achievements",
             "x": 100,
-            "y": 50
+            "y": 150
           }
         ]
       },
       {
-        "name": "KO Type Bonuses",
+        "name": "KO Type Bonuses 1",
         "access_rules": [],
         "sections": [
           {
@@ -328,19 +443,32 @@
             "name": "Triple KO"
           },
           {
-            "name": "Dead-Weight KO"
+            "name": "Quadruple KO",
+            "access_rules": ["$CanGetQuadrupleKo"],
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Quintuple KO",
+            "access_rules": ["$CanGetQuintupleKo"],
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
+            "name": "Dead-Weight KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
             "name": "Kiss-the-Floor KO"
           },
           {
-            "name": "Poser KO"
+            "name": "Poser KO",
+            "access_rules": ["$CanGetPoserBonus"]
           },
           {
             "name": "Cheap KO"
           },
           {
-            "name": "Bank-Shot KO"
+            "name": "Bank-Shot KO",
+            "access_rules": ["$CanGetBankShotKo"]
           },
           {
             "name": "Star KO"
@@ -368,7 +496,20 @@
           },
           {
             "name": "Carrier KO"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 150,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "KO Type Bonuses 2",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Assisted KO"
           },
@@ -400,52 +541,77 @@
             "name": "Capsule KO"
           },
           {
+            "name": "Screw-Attack KO",
+            "visibility_rules": ["enable_hard_bonuses"]
+          },
+          {
             "name": "Warp-Star KO"
           },
           {
             "name": "Bunny-hood Blast"
           },
           {
-            "name": "Paratroopa KO"
+            "name": "Paratroopa KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
-            "name": "ReDead KO"
+            "name": "ReDead KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
-            "name": "Like Like KO"
+            "name": "Like Like KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
-            "name": "Octorok KO"
+            "name": "Octorok KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
-            "name": "Topi KO"
+            "name": "Topi KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
-            "name": "Polar Bear KO"
+            "name": "Polar Bear KO",
+            "access_rules": ["$HasAdventureMode"]
           },
           {
             "name": "Shy Guy KO"
-          },
-          {
-            "name": "Pokémon KO"
-          },
-          {
-            "name": "Goomba KO"
-          },
-          {
-            "name": "Koopa KO"
           }
         ],
         "map_locations": [
           {
             "map": "bonus_achievements",
             "x": 150,
-            "y": 50
+            "y": 100
           }
         ]
       },
       {
-        "name": "Item-Related Bonuses",
+        "name": "KO Type Bonuses 3",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Pokémon KO"
+          },
+          {
+            "name": "Goomba KO",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Koopa KO",
+            "access_rules": ["$HasAdventureMode"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 150,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Item-Related Bonuses 1",
         "access_rules": [],
         "sections": [
           {
@@ -464,10 +630,12 @@
             "name": "Triple Items"
           },
           {
-            "name": "Lucky Threes"
+            "name": "Lucky Threes",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
-            "name": "Jackpot"
+            "name": "Jackpot",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
             "name": "Pitcher"
@@ -507,6 +675,23 @@
           },
           {
             "name": "Flame Thrower"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 200,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Item-Related Bonuses 2",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Hammer Throw",
+            "visibility_rules": ["enable_extreme_bonuses"]
           },
           {
             "name": "Headless Hammer"
@@ -519,6 +704,14 @@
           },
           {
             "name": "Bob-omb Squad"
+          },
+          {
+            "name": "Mew Catcher",
+            "visibility_rules": ["enable_rare_pokemon_checks"]
+          },
+          {
+            "name": "Celebi Catcher",
+            "visibility_rules": ["enable_rare_pokemon_checks"]
           },
           {
             "name": "Mr. Saturn Fan"
@@ -543,73 +736,117 @@
           {
             "map": "bonus_achievements",
             "x": 200,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Mode-Specific Bonuses 1",
+        "access_rules": [],
+        "sections": [
+          {
+            "name": "Classic Clear",
+            "access_rules": ["$HasClassicMode"]
+          },
+          {
+            "name": "Adventure Clear",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "All-Star Clear",
+            "access_rules": ["$HasAllStarMode"]
+          },
+          {
+            "name": "Giga Bowser KO",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Crazy Hand KO",
+            "access_rules": ["$HasClassicMode"]
+          },
+          {
+            "name": "Luigi KO",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Giant Kirby KO",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Metal Bros. KO",
+            "access_rules": ["$HasAdventureMode,$CanGetMetalBrosKo"]
+          },
+          {
+            "name": "Collector",
+            "access_rules": ["$HasClassicMode"]
+          },
+          {
+            "name": "Target Master",
+            "access_rules": ["$HasClassicMode"]
+          },
+          {
+            "name": "Hobbyist",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Link Master",
+            "access_rules": ["$HasAdventureMode"]
+          },
+          {
+            "name": "Continuation",
+            "access_rules": ["$HasAnyMain1P"]
+          },
+          {
+            "name": "Speedster",
+            "access_rules": ["$HasAnyMain1P"],
+            "visibility_rules": ["enable_extreme_bonuses"]
+          },
+          {
+            "name": "Speed Demon",
+            "access_rules": ["$HasAnyMain1P"]
+          },
+          {
+            "name": "Melee Master",
+            "access_rules": ["$HasAllStarMode"]
+          },
+          {
+            "name": "Very Hard Clear",
+            "access_rules": ["$HasAnyMain1P"],
+            "visibility_rules": ["hard_modes_clear"]
+          },
+          {
+            "name": "No-Damage Clear",
+            "access_rules": ["$HasAnyMain1P"],
+            "visibility_rules": ["enable_extreme_bonuses"]
+          },
+          {
+            "name": "No-Miss Clear",
+            "access_rules": ["$HasAnyMain1P"]
+          },
+          {
+            "name": "Half-Minute Man",
+            "access_rules": ["$HasAnyMain1P"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 250,
             "y": 50
           }
         ]
       },
       {
-        "name": "Mode-Specific Bonuses",
+        "name": "Mode-Specific Bonuses 2",
         "access_rules": [],
         "sections": [
           {
-            "name": "Classic Clear"
+            "name": "Lucky Number Seven",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
-            "name": "Adventure Clear"
-          },
-          {
-            "name": "All-Star Clear"
-          },
-          {
-            "name": "Giga Bowser KO"
-          },
-          {
-            "name": "Crazy Hand KO"
-          },
-          {
-            "name": "Luigi KO"
-          },
-          {
-            "name": "Giant Kirby KO"
-          },
-          {
-            "name": "Metal Bros. KO"
-          },
-          {
-            "name": "Collector"
-          },
-          {
-            "name": "Target Master"
-          },
-          {
-            "name": "Hobbyist"
-          },
-          {
-            "name": "Link Master"
-          },
-          {
-            "name": "Continuation"
-          },
-          {
-            "name": "Speed Demon"
-          },
-          {
-            "name": "Melee Master"
-          },
-          {
-            "name": "Very Hard Clear"
-          },
-          {
-            "name": "No-Miss Clear"
-          },
-          {
-            "name": "Half-Minute Man"
-          },
-          {
-            "name": "Lucky Number Seven"
-          },
-          {
-            "name": "Last Second"
+            "name": "Last Second",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
             "name": "Environmental Hazard"
@@ -664,7 +901,20 @@
           },
           {
             "name": "Flower Finish"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 250,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Mode-Specific Bonuses 3",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Super Scoper"
           },
@@ -724,7 +974,20 @@
           },
           {
             "name": "Merciful Master"
-          },
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bonus_achievements",
+            "x": 250,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Mode-Specific Bonuses 4",
+        "access_rules": [],
+        "sections": [
           {
             "name": "Fall Guy"
           },
@@ -739,7 +1002,7 @@
           {
             "map": "bonus_achievements",
             "x": 250,
-            "y": 50
+            "y": 200
           }
         ]
       }

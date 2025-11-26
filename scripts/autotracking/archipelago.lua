@@ -361,12 +361,16 @@ local function onClear(slot_data)
     for _, locationId in ipairs(Archipelago.MissingLocations) do
         allLocations[locationId] = true
     end
+    Tracker:FindObjectForCode(ItemSettings.Bonussanity).Active = allLocations[0x01] or false -- Bonus - Dedicated Specialist
+    Tracker:FindObjectForCode(ItemSettings.BonusHardChecks).Active = allLocations[0x09] or false -- Bonus - All Variations
+    Tracker:FindObjectForCode(ItemSettings.BonusExtremeChecks).Active = allLocations[0x26] or false -- Bonus - Power Shielder
     Tracker:FindObjectForCode(ItemSettings.Eventsanity).Active = allLocations[0xF7] or false -- Event Match 1 - Trouble King
     Tracker:FindObjectForCode(ItemSettings.HardModesClear).Active = allLocations[0x182] or false -- Classic Mode - Hard/Continueless Clear
     Tracker:FindObjectForCode(ItemSettings.AnnoyingMultiManChecks).Active = allLocations[0x1A0] or false -- Multi-Man Melee - 15 Minute Melee Clear
     Tracker:FindObjectForCode(ItemSettings.TargetClearChecks).Active = allLocations[0x184] or false -- Target Test - Mario
     Tracker:FindObjectForCode(ItemSettings.LongTargetTestChecks).Active = allLocations[0x19D] or false -- Target Test - All Characters, Sub 12:30 Total Time
     Tracker:FindObjectForCode(ItemSettings.MewtwoUnlockCheck).Active = allLocations[0x1C0] or false -- Melee - Mewtwo Unlock Match
+    Tracker:FindObjectForCode(ItemSettings.RarePokemonChecks).Active = allLocations[0x1A8] or false -- Melee - See Mew
     Tracker:FindObjectForCode(ItemSettings.AllClassicTrophies).Active = allLocations[0x183] or false -- Classic Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAdventureTrophies).Active = allLocations[0x17B] or false -- Adventure Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAllStarTrophies).Active = allLocations[0x180] or false -- All-Star Mode - All Character Trophies

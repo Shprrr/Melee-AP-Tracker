@@ -140,6 +140,10 @@ function HasAllStarMode()
     return has("All-Star Mode")
 end
 
+function HasAnyMain1P()
+    return HasClassicMode() or HasAdventureMode() or HasAllStarMode()
+end
+
 function HasTargetTest()
     return has("Target Test")
 end
@@ -299,7 +303,7 @@ end
 -- =====================================
 
 -- Characters that can meteor smash
-local function has_meteor_character()
+local function hasMeteorCharacter()
     local meteor_chars = {"Captain Falcon", "Donkey Kong", "Falco", "Fox", "Ganondorf",
                           "Ice Climbers", "Kirby", "Link", "Luigi", "Young Link",
                           "Mario", "Marth", "Mewtwo", "Mr. Game & Watch", "Ness",
@@ -314,7 +318,7 @@ local function has_meteor_character()
 end
 
 -- Characters that can reflect projectiles
-local function has_reflect_character()
+local function hasReflectCharacter()
     local reflect_chars = {"Mario", "Dr. Mario", "Fox", "Falco", "Ness"}
 
     for _, char in ipairs(reflect_chars) do
@@ -466,11 +470,11 @@ end
 
 -- Character unlock conditions based on the rules
 function CanUnlockJigglypuff()
-    return HasClassicMode() or HasAdventureMode() or HasAllStarMode() -- Any 1P mode
+    return HasAnyMain1P() -- Any 1P mode
 end
 
 function CanUnlockDrMario()
-    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and has_mario()
+    return HasAnyMain1P() and has_mario()
 end
 
 function CanUnlockPichu()
@@ -486,7 +490,7 @@ function CanUnlockMarth()
 end
 
 function CanUnlockYoungLink()
-    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and GroupUniqueCharacters10()
+    return HasAnyMain1P() and GroupUniqueCharacters10()
 end
 
 function CanUnlockGanondorf()
@@ -502,11 +506,11 @@ function CanUnlockLuigi()
 end
 
 function CanUnlockRoy()
-    return (HasClassicMode() or HasAdventureMode() or HasAllStarMode()) and has_marth()
+    return HasAnyMain1P() and has_marth()
 end
 
 function CanUnlockMrGameWatch()
-    return hasEveryoneExceptGameWatch() and (HasAdventureMode() or HasAllStarMode() or HasClassicMode() or HasTargetTest())
+    return hasEveryoneExceptGameWatch() and (HasAnyMain1P() or HasTargetTest())
 end
 
 -- =====================================
@@ -553,37 +557,37 @@ end
 -- =====================================
 
 -- Meteor-related bonuses
-local function can_get_meteor_bonus()
-    return has_meteor_character()
+function CanGetMeteorBonus()
+    return hasMeteorCharacter()
 end
 
 -- Reflection bonuses
-local function can_get_bank_shot_ko()
-    return has_reflect_character()
+function CanGetBankShotKo()
+    return hasReflectCharacter()
 end
 
 -- Luigi-specific bonuses
-local function can_get_poser_bonus()
+function CanGetPoserBonus()
     return has_luigi()
 end
 
-local function can_get_metal_bros_ko()
+function CanGetMetalBrosKo()
     return has_luigi()
 end
 
 -- Multi-KO bonuses (Adventure/All-Star have more enemies)
-local function can_get_quadruple_ko()
+function CanGetQuadrupleKo()
     return HasAdventureMode() or HasAllStarMode()
 end
 
-local function can_get_quintuple_ko()
+function CanGetQuintupleKo()
     return HasAdventureMode() or HasAllStarMode()
 end
 
 -- All bonuses requirement (for Diskun trophy)
-local function can_get_all_bonuses()
+function CanGetAllBonuses()
     return HasAdventureMode() and HasAllStarMode() and HasClassicMode() and
-           has_luigi() and has_meteor_character() and has_reflect_character()
+           has_luigi() and hasMeteorCharacter() and hasReflectCharacter()
 end
 
 -- =====================================
