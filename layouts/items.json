@@ -62,8 +62,8 @@
                             "h_alignment": "center",
                             "rows": [
                                 ["total_trophies", "classic_trophies", "adventure_trophies", "allstar_trophies"],
-                                ["PikminSave", "Birdo", "Kraid", "Sudowoodo"],
-                                ["Empty", "UFO", "Falcon Flyer", "Empty"]
+                                ["Pikmin Savefile", "Birdo (Trophy)", "Kraid (Trophy)", "Sudowoodo (Trophy)"],
+                                ["Empty", "UFO (Trophy)", "Falcon Flyer (Trophy)", "Empty"]
                             ]
                         }
                     ]
@@ -82,8 +82,8 @@
                             "item_margin": "2,2",
                             "item_size": 40,
                             "rows": [
-                                ["Brinstar Depths", "Fourside", "Big Blue", "Poke Floats"],
-                                ["Mushroom Kingdom II", "Dream Land", "Kongo Jungle Past", "Yoshi's Island Past"],
+                                ["Brinstar Depths", "Fourside", "Big Blue", "Poké Floats"],
+                                ["Mushroom Kingdom II", "Dream Land (Past)", "Kongo Jungle (Past)", "Yoshi's Island (Past)"],
                                 ["Flat Zone", "Battlefield", "Final Destination"]
                             ]
                         }

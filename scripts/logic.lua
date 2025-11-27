@@ -213,7 +213,7 @@ local function hasAllBaseCharacters()
 end
 
 -- All secret characters
-local function hasAllSecretCharacters()
+function HasAllSecretCharacters()
     return has_luigi() and has_jigglypuff() and has_mewtwo() and has_mr_game_and_watch() and
            has_marth() and has_roy() and has_pichu() and has_ganondorf() and
            has_dr_mario() and has_young_link() and has_falco()
@@ -279,7 +279,7 @@ end
 -- STAGE ACCESS
 -- =====================================
 
-local function has_regular_stages()
+function HasAllRegularStages()
     return has("Mushroom Kingdom II") and has("Poké Floats") and has("Big Blue") and
            has("Flat Zone") and has("Fourside") and has("Brinstar Depths")
 end
@@ -388,23 +388,23 @@ function HasAllAllStarTrophies()
     return hasCount("allstar_trophies", 26)
 end
 
-local function has_birdo_trophy()
+function HasBirdoTrophy()
     return has("Birdo (Trophy)")
 end
 
-local function has_kraid_trophy()
+function HasKraidTrophy()
     return has("Kraid (Trophy)")
 end
 
-local function has_falcon_flyer_trophy()
+function HasFalconFlyerTrophy()
     return has("Falcon Flyer (Trophy)")
 end
 
-local function has_ufo_trophy()
+function HasUfoTrophy()
     return has("UFO (Trophy)")
 end
 
-local function has_sudowoodo_trophy()
+function HasSudowoodoTrophy()
     return has("Sudowoodo (Trophy)")
 end
 
@@ -434,7 +434,7 @@ end
 
 function HasSecretCharacterLottery()
     if has("lottery_pool_mode_vanilla") then
-        return hasAllSecretCharacters()
+        return HasAllSecretCharacters()
     else
         return hasCount("Lottery", 3) or has("LotterySecret")
     end
@@ -460,7 +460,7 @@ end
 -- SPECIAL ITEMS
 -- =====================================
 
-local function has_pikmin_savefile()
+function HasPikminSavefile()
     return has("Pikmin Savefile")
 end
 
@@ -710,28 +710,17 @@ function CanGetAllStarTrophy(character)
     return has(character) and HasAllStarMode()
 end
 
--- Special trophy requirements
-local function has_required_special_trophies()
-    return has_birdo_trophy() and has_kraid_trophy() and has_falcon_flyer_trophy() and
-           has_ufo_trophy() and has_sudowoodo_trophy()
-end
-
 -- =====================================
 -- MILESTONE REQUIREMENTS
 -- =====================================
 
 -- Character unlock milestones
-local function has_first_secret_wave()
+function HasFirstSecretWave()
     return has_luigi() and has_jigglypuff() and has_mewtwo() and has_mr_game_and_watch() and has_marth()
 end
 
-local function has_second_secret_wave()
+function HasSecondSecretWave()
     return has_roy() and has_pichu() and has_ganondorf() and has_dr_mario() and has_young_link() and has_falco()
-end
-
--- Stage unlock milestone
-local function has_all_regular_stages()
-    return has_regular_stages()
 end
 
 -- =====================================
@@ -764,11 +753,6 @@ end
 -- Check if player has access to lottery system
 local function has_lottery_access()
     return HasBaseLottery()
-end
-
--- Check if player can access special Pikmin content
-local function can_access_pikmin_content()
-    return has_pikmin_savefile()
 end
 
 -- Check if player has enough characters for various challenges

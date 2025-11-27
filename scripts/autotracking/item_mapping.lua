@@ -31,11 +31,11 @@ ITEM_MAPPING = {
     [0x1A] = {"Brinstar Depths", "toggle"},
     [0x1B] = {"Fourside", "toggle"},
     [0x1C] = {"Big Blue", "toggle"},
-    [0x1D] = {"Poke Floats", "toggle"},
+    [0x1D] = {"Poké Floats", "toggle"},
     [0x1E] = {"Mushroom Kingdom II", "toggle"},
-    [0x1F] = {"Dream Land", "toggle"},
-    [0x20] = {"Kongo Jungle Past", "toggle"},
-    [0x21] = {"Yoshi's Island Past", "toggle"},
+    [0x1F] = {"Dream Land (Past)", "toggle"},
+    [0x20] = {"Kongo Jungle (Past)", "toggle"},
+    [0x21] = {"Yoshi's Island (Past)", "toggle"},
     [0x22] = {"Battlefield", "toggle"},
     [0x23] = {"Final Destination", "toggle"},
     [0x24] = {"Flat Zone", "toggle"},
@@ -65,11 +65,11 @@ ITEM_MAPPING = {
     [0x159] = {"Pikmin Savefile", "toggle"},
 
     -- Trophy items (examples)
-    ["Birdo (Trophy)"] = {"Birdo (Trophy)", "toggle"},
-    ["Kraid (Trophy)"] = {"Kraid (Trophy)", "toggle"},
-    ["Falcon Flyer (Trophy)"] = {"Falcon Flyer (Trophy)", "toggle"},
-    ["UFO (Trophy)"] = {"UFO (Trophy)", "toggle"},
-    ["Sudowoodo (Trophy)"] = {"Sudowoodo (Trophy)", "toggle"}
+    [0xB8] = {"Sudowoodo (Trophy)", "toggle"},
+    [0xD1] = {"Birdo (Trophy)", "toggle"},
+    [0xDA] = {"Falcon Flyer (Trophy)", "toggle"},
+    [0xE1] = {"Kraid (Trophy)", "toggle"},
+    [0xE5] = {"UFO (Trophy)", "toggle"}
 }
 
 ItemSettings = {
@@ -90,6 +90,8 @@ ItemSettings = {
     LongTargetTestChecks = "long_targettest_checks",
     MewtwoUnlockCheck = "mewtwo_unlock_check",
     RarePokemonChecks = "enable_rare_pokemon_checks",
+    VSCountChecks = "vs_count_checks",
+    DiskunTrophyCheck = "diskun_trophy_check",
     AllClassicTrophies = "all_classic_trophies",
     AllAdventureTrophies = "all_adventure_trophies",
     AllAllStarTrophies = "all_allstar_trophies",

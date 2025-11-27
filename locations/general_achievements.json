@@ -8,7 +8,7 @@
     "children": [
       {
         "name": "VS Mode Milestones",
-        "access_rules": [],
+        "visibility_rules": ["vs_count_checks"],
         "chest_unopened_img": "images/chests/achievement_uncollected.png",
         "chest_opened_img": "images/chests/achievement_collected.png",
         "sections": [
@@ -66,31 +66,32 @@
             "name": "All Stages + Secret Characters",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["$GroupUniqueStages11", "Jigglypuff", "Dr. Mario", "Pichu", "Falco", "Marth", "Young Link", "Ganondorf", "Mewtwo", "Luigi", "Roy", "Mr. Game & Watch"]
+            "access_rules": ["$GroupUniqueStages11,$HasAllSecretCharacters"]
           },
           {
             "name": "Unlock Luigi, Jigglypuff, Mewtwo, Mr. Game & Watch, and Marth",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Luigi", "Jigglypuff", "Mewtwo", "Mr. Game & Watch", "Marth"]
+            "access_rules": ["$HasFirstSecretWave"]
           },
           {
             "name": "Unlock Roy, Pichu, Ganondorf, Dr. Mario, Young Link, and Falco",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Roy", "Pichu", "Ganondorf", "Dr. Mario", "Young Link", "Falco"]
+            "access_rules": ["$HasSecondSecretWave"]
           },
           {
             "name": "Unlock All Regular Stages",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Mushroom Kingdom II", "Poké Floats", "Big Blue", "Flat Zone", "Fourside", "Brinstar Depths"]
+            "access_rules": ["$HasAllRegularStages"]
           },
           {
             "name": "All Bonuses",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Adventure Mode", "All-Star Mode", "Classic Mode", "Luigi"]
+            "access_rules": ["$CanGetAllBonuses"],
+            "visibility_rules": ["diskun_trophy_check"]
           }
         ],
         "map_locations": [
@@ -110,7 +111,8 @@
           {
             "name": "100 Coins",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
-            "chest_opened_img": "images/chests/achievement_collected.png"
+            "chest_opened_img": "images/chests/achievement_collected.png",
+            "access_rules": ["$HasAnyMain1P"]
           },
           {
             "name": "10 KO's",
@@ -130,12 +132,14 @@
           {
             "name": "See Mew",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
-            "chest_opened_img": "images/chests/achievement_collected.png"
+            "chest_opened_img": "images/chests/achievement_collected.png",
+            "visibility_rules": ["enable_rare_pokemon_checks"]
           },
           {
             "name": "See Celebi",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
-            "chest_opened_img": "images/chests/achievement_collected.png"
+            "chest_opened_img": "images/chests/achievement_collected.png",
+            "visibility_rules": ["enable_rare_pokemon_checks"]
           }
         ],
         "map_locations": [
@@ -156,37 +160,37 @@
             "name": "Have Birdo Trophy",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Birdo (Trophy)"]
+            "access_rules": ["$HasBirdoTrophy"]
           },
           {
             "name": "Have Kraid Trophy",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Kraid (Trophy)"]
+            "access_rules": ["$HasKraidTrophy"]
           },
           {
             "name": "Have Falcon Flyer Trophy",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Falcon Flyer (Trophy)"]
+            "access_rules": ["$HasFalconFlyerTrophy"]
           },
           {
             "name": "Have UFO Trophy",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["UFO (Trophy)"]
+            "access_rules": ["$HasUfoTrophy"]
           },
           {
             "name": "Have Sudowoodo Trophy",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Sudowoodo (Trophy)"]
+            "access_rules": ["$HasSudowoodoTrophy"]
           },
           {
             "name": "Pikmin Memory Card Data",
             "chest_unopened_img": "images/chests/achievement_uncollected.png",
             "chest_opened_img": "images/chests/achievement_collected.png",
-            "access_rules": ["Pikmin Savefile"]
+            "access_rules": ["$HasPikminSavefile"]
           }
         ],
         "map_locations": [

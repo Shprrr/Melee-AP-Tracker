@@ -228,7 +228,7 @@
         "type": "toggle",
         "img": "images/items/Poke Floats.png",
         "img_mods": "",
-        "codes": "Poke Floats"
+        "codes": "Poké Floats"
     },
     {
         "name": "Mushroom Kingdom II",
@@ -242,21 +242,21 @@
         "type": "toggle",
         "img": "images/items/Dream Land.png",
         "img_mods": "",
-        "codes": "Dream Land"
+        "codes": "Dream Land (Past)"
     },
     {
         "name": "Kongo Jungle (Past)",
         "type": "toggle",
         "img": "images/items/Kongo Jungle Past.png",
         "img_mods": "",
-        "codes": "Kongo Jungle Past"
+        "codes": "Kongo Jungle (Past)"
     },
     {
         "name": "Yoshi's Island (Past)",
         "type": "toggle",
         "img": "images/items/Yoshi's Island Past.png",
         "img_mods": "",
-        "codes": "Yoshi's Island Past"
+        "codes": "Yoshi's Island (Past)"
     },
     {
         "name": "Flat Zone",
@@ -410,42 +410,42 @@
         "type": "toggle",
         "img": "images/items/Birdo.png",
         "img_mods": "",
-        "codes": "Birdo"
+        "codes": "Birdo (Trophy)"
     },
     {
         "name": "Kraid Trophy",
         "type": "toggle",
         "img": "images/items/Kraid.png",
         "img_mods": "",
-        "codes": "Kraid"
+        "codes": "Kraid (Trophy)"
     },
     {
         "name": "Sudowoodo Trophy",
         "type": "toggle",
         "img": "images/items/Sudowoodo.png",
         "img_mods": "",
-        "codes": "Sudowoodo"
+        "codes": "Sudowoodo (Trophy)"
     },
     {
         "name": "UFO Trophy",
         "type": "toggle",
         "img": "images/items/UFO.png",
         "img_mods": "",
-        "codes": "UFO"
+        "codes": "UFO (Trophy)"
     },
     {
         "name": "Falcon Flyer Trophy",
         "type": "toggle",
         "img": "images/items/Falcon Flyer.png",
         "img_mods": "",
-        "codes": "Falcon Flyer"
+        "codes": "Falcon Flyer (Trophy)"
     },
     {
         "name": "Pikmin Save Data",
         "type": "toggle",
         "img": "images/Save Data.png",
         "img_mods": "",
-        "codes": "PikminSave"
+        "codes": "Pikmin Savefile"
     },
     {
         "name": "Lottery Pool Upgrade (Adventure/Classic Clear)",

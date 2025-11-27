@@ -300,7 +300,7 @@ local function onItem(index, item_id, item_name, player_number)
     end
 
     if updateTrophyCounters(item_id, item_name) then
-        return
+        if not ITEM_MAPPING[item_id] then return end -- Not all trophies have mapping entries
     end
 
     -- Handle other item types (coins, etc.)
@@ -371,6 +371,8 @@ local function onClear(slot_data)
     Tracker:FindObjectForCode(ItemSettings.LongTargetTestChecks).Active = allLocations[0x19D] or false -- Target Test - All Characters, Sub 12:30 Total Time
     Tracker:FindObjectForCode(ItemSettings.MewtwoUnlockCheck).Active = allLocations[0x1C0] or false -- Melee - Mewtwo Unlock Match
     Tracker:FindObjectForCode(ItemSettings.RarePokemonChecks).Active = allLocations[0x1A8] or false -- Melee - See Mew
+    Tracker:FindObjectForCode(ItemSettings.VSCountChecks).Active = allLocations[0x1C4] or false -- Melee - 10 VS. Matches
+    Tracker:FindObjectForCode(ItemSettings.DiskunTrophyCheck).Active = allLocations[0x1A4] or false -- Melee - All Bonuses
     Tracker:FindObjectForCode(ItemSettings.AllClassicTrophies).Active = allLocations[0x183] or false -- Classic Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAdventureTrophies).Active = allLocations[0x17B] or false -- Adventure Mode - All Character Trophies
     Tracker:FindObjectForCode(ItemSettings.AllAllStarTrophies).Active = allLocations[0x180] or false -- All-Star Mode - All Character Trophies

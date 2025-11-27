@@ -675,8 +675,9 @@ LOCATION_TO_TRACKER_MAP = {
     [0x1A9] = "@General Game Achievements/Gameplay Milestones/See Celebi",
 
     -- Game Completion Goals
+    [0x1A4] = "@General Game Achievements/General Game Goals/All Bonuses",
     [0x1B1] = "@General Game Achievements/General Game Goals/All Stages + Secret Characters",
-    [0x1B2] = "@General Game Achievements/Game Goals/Unlock Luigi, Jigglypuff, Mewtwo, Mr. Game & Watch, and Marth",
+    [0x1B2] = "@General Game Achievements/General Game Goals/Unlock Luigi, Jigglypuff, Mewtwo, Mr. Game & Watch, and Marth",
     [0x1B3] = "@General Game Achievements/General Game Goals/Unlock Roy, Pichu, Ganondorf, Dr. Mario, Young Link, and Falco",
     [0x261] = "@General Game Achievements/General Game Goals/Unlock All Regular Stages",
 
