@@ -77,6 +77,12 @@
         "codes": "event_checks"
     },
     {
+        "name": "Ten-Man Sanity",
+        "type": "toggle",
+        "img": "images/items/Multi-Man Melee2.png",
+        "codes": "ten_man_checks"
+    },
+    {
         "name": "Hard Mode Clears",
         "type": "toggle",
         "img": "images/items/Hard.png",

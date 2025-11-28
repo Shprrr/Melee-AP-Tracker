@@ -604,6 +604,11 @@ function CanDoAllTargets()
     return GroupUniqueCharacters25() and HasTargetTest()
 end
 
+-- Individual character multi-man melee
+function CanDoMultiManMelee(character)
+    return has(character) and HasMultiManMelee()
+end
+
 -- =====================================
 -- EVENT MATCH REQUIREMENTS
 -- =====================================

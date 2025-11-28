@@ -365,6 +365,7 @@ local function onClear(slot_data)
     Tracker:FindObjectForCode(ItemSettings.BonusHardChecks).Active = allLocations[0x09] or false -- Bonus - All Variations
     Tracker:FindObjectForCode(ItemSettings.BonusExtremeChecks).Active = allLocations[0x26] or false -- Bonus - Power Shielder
     Tracker:FindObjectForCode(ItemSettings.Eventsanity).Active = allLocations[0xF7] or false -- Event Match 1 - Trouble King
+    Tracker:FindObjectForCode(ItemSettings.TenManSanity).Active = allLocations[0x273] or false -- Multi Man Melee - Mario 10-Man
     Tracker:FindObjectForCode(ItemSettings.HardModesClear).Active = allLocations[0x182] or false -- Classic Mode - Hard/Continueless Clear
     Tracker:FindObjectForCode(ItemSettings.AnnoyingMultiManChecks).Active = allLocations[0x1A0] or false -- Multi-Man Melee - 15 Minute Melee Clear
     Tracker:FindObjectForCode(ItemSettings.TargetClearChecks).Active = allLocations[0x184] or false -- Target Test - Mario

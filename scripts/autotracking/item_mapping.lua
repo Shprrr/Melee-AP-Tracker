@@ -84,6 +84,7 @@ ItemSettings = {
     BonusHardChecks = "enable_hard_bonuses",
     BonusExtremeChecks = "enable_extreme_bonuses",
     Eventsanity = "event_checks",
+    TenManSanity = "ten_man_checks",
     HardModesClear = "hard_modes_clear",
     AnnoyingMultiManChecks = "enable_annoying_multiman_checks",
     TargetClearChecks = "target_checks",

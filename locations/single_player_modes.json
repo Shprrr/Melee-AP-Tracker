@@ -202,6 +202,138 @@
         ]
       },
       {
+        "name": "Multi Man Melee Starting Characters",
+        "access_rules": ["$HasMultiManMelee"],
+        "visibility_rules": ["ten_man_checks"],
+        "chest_unopened_img": "images/chests/mode_uncollected.png",
+        "chest_opened_img": "images/chests/mode_collected.png",
+        "sections": [
+          {
+            "name": "Mario",
+            "access_rules": ["$CanDoMultiManMelee|Mario"]
+          },
+          {
+            "name": "Donkey Kong",
+            "access_rules": ["$CanDoMultiManMelee|Donkey Kong"]
+          },
+          {
+            "name": "Link",
+            "access_rules": ["$CanDoMultiManMelee|Link"]
+          },
+          {
+            "name": "Samus",
+            "access_rules": ["$CanDoMultiManMelee|Samus"]
+          },
+          {
+            "name": "Yoshi",
+            "access_rules": ["$CanDoMultiManMelee|Yoshi"]
+          },
+          {
+            "name": "Kirby",
+            "access_rules": ["$CanDoMultiManMelee|Kirby"]
+          },
+          {
+            "name": "Fox",
+            "access_rules": ["$CanDoMultiManMelee|Fox"]
+          },
+          {
+            "name": "Pikachu",
+            "access_rules": ["$CanDoMultiManMelee|Pikachu"]
+          },
+          {
+            "name": "Ness",
+            "access_rules": ["$CanDoMultiManMelee|Ness"]
+          },
+          {
+            "name": "Captain Falcon",
+            "access_rules": ["$CanDoMultiManMelee|Captain Falcon"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "single_player",
+            "x": 250,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Multi Man Melee Secret Characters",
+        "access_rules": ["$HasMultiManMelee"],
+        "visibility_rules": ["ten_man_checks"],
+        "chest_unopened_img": "images/chests/mode_uncollected.png",
+        "chest_opened_img": "images/chests/mode_collected.png",
+        "sections": [
+          {
+            "name": "Bowser",
+            "access_rules": ["$CanDoMultiManMelee|Bowser"]
+          },
+          {
+            "name": "Peach",
+            "access_rules": ["$CanDoMultiManMelee|Peach"]
+          },
+          {
+            "name": "Ice Climbers",
+            "access_rules": ["$CanDoMultiManMelee|Ice Climbers"]
+          },
+          {
+            "name": "Zelda",
+            "access_rules": ["$CanDoMultiManMelee|Zelda"]
+          },
+          {
+            "name": "Luigi",
+            "access_rules": ["$CanDoMultiManMelee|Luigi"]
+          },
+          {
+            "name": "Jigglypuff",
+            "access_rules": ["$CanDoMultiManMelee|Jigglypuff"]
+          },
+          {
+            "name": "Mewtwo",
+            "access_rules": ["$CanDoMultiManMelee|Mewtwo"]
+          },
+          {
+            "name": "Mr. Game & Watch",
+            "access_rules": ["$CanDoMultiManMelee|Mr. Game & Watch"]
+          },
+          {
+            "name": "Marth",
+            "access_rules": ["$CanDoMultiManMelee|Marth"]
+          },
+          {
+            "name": "Roy",
+            "access_rules": ["$CanDoMultiManMelee|Roy"]
+          },
+          {
+            "name": "Dr. Mario",
+            "access_rules": ["$CanDoMultiManMelee|Dr. Mario"]
+          },
+          {
+            "name": "Ganondorf",
+            "access_rules": ["$CanDoMultiManMelee|Ganondorf"]
+          },
+          {
+            "name": "Falco",
+            "access_rules": ["$CanDoMultiManMelee|Falco"]
+          },
+          {
+            "name": "Young Link",
+            "access_rules": ["$CanDoMultiManMelee|Young Link"]
+          },
+          {
+            "name": "Pichu",
+            "access_rules": ["$CanDoMultiManMelee|Pichu"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "single_player",
+            "x": 250,
+            "y": 150
+          }
+        ]
+      },
+      {
         "name": "Training Mode",
         "access_rules": [],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
