@@ -8,19 +8,20 @@
     "children": [
       {
         "name": "Classic Mode",
-        "access_rules": ["$HasClassicMode"],
         "chest_unopened_img": "images/chests/mode_uncollected.png",
         "chest_opened_img": "images/chests/mode_collected.png",
         "sections": [
           {
             "name": "5 Minute Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
-            "chest_opened_img": "images/chests/mode_collected.png"
+            "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$HasClassicMode"]
           },
           {
             "name": "Hard-Continueless Clear",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png",
+            "access_rules": ["$HasClassicMode"],
             "visibility_rules": ["hard_modes_clear"]
           },
           {
@@ -78,6 +79,9 @@
             "name": "Giga Bowser Continueless",
             "chest_unopened_img": "images/chests/mode_uncollected.png",
             "chest_opened_img": "images/chests/mode_collected.png"
+          },
+          {
+            "ref": "Single Player Modes/Classic Mode/Game & Watch Clear"
           }
         ],
         "map_locations": [
@@ -116,6 +120,9 @@
             "chest_opened_img": "images/chests/mode_collected.png",
             "access_rules": ["$HasAllAllStarTrophies"],
             "visibility_rules": ["all_allstar_trophies"]
+          },
+          {
+            "ref": "Single Player Modes/Classic Mode/Game & Watch Clear"
           }
         ],
         "map_locations": [

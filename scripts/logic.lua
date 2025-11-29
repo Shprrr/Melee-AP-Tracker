@@ -549,7 +549,7 @@ end
 
 -- Classic mode specific requirements
 function CanDoGameWatchClassic()
-    return has_mr_game_and_watch() and HasClassicMode()
+    return has_mr_game_and_watch() and HasAnyMain1P()
 end
 
 -- =====================================
