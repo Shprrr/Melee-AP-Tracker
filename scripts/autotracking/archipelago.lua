@@ -334,6 +334,9 @@ end
 
 -- Clear handler for reset
 local function onClear(slot_data)
+    -- use bulk update to pause logic updates until we are done resetting all items/locations
+    Tracker.BulkUpdate = true
+
     debugPrint("=== CLEARING TRACKER STATE ===")
     SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -400,6 +403,28 @@ local function onClear(slot_data)
         end
     end
 
+    -- Reset all locations
+    for _, mapping_entry in pairs(LOCATION_TO_TRACKER_MAP) do
+        if mapping_entry then
+            local location_code = mapping_entry
+            if type(location_code) == "string" and location_code:sub(1, 1) == "@" then
+                local obj = Tracker:FindObjectForCode(location_code)
+                if obj then
+                    debugPrint(string.format("onClear: resetting location %s", location_code))
+                    obj.AvailableChestCount = obj.ChestCount
+                    if obj.Highlight then
+                        obj.Highlight = Highlight.None
+                    end
+                end
+            else
+                -- reset hosted item
+                location_code = mapping_entry[0]
+                local item_type = mapping_entry[1]
+                resetItem(location_code, item_type)
+            end
+        end
+    end
+
     -- Set character counter to 1 (starting with 1 random character)
     local unlock_counter = Tracker:FindObjectForCode("characters_unlocked")
     if unlock_counter then
@@ -408,6 +433,7 @@ local function onClear(slot_data)
     end
 
     debugPrint("=== TRACKER RESET COMPLETE ===")
+    Tracker.BulkUpdate = false
 end
 
 -- Helper function to count table entries

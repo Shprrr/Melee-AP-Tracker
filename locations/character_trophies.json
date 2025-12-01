@@ -244,97 +244,97 @@
             "access_rules": ["$CanGetAdventureTrophy|Captain Falcon"]
           },
           {
-            "name": "Bowser - Classic Trophy",
+            "name": "Bowser - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Bowser"]
           },
           {
-            "name": "Peach - Classic Trophy",
+            "name": "Peach - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Peach"]
           },
           {
-            "name": "Ice Climbers - Classic Trophy",
+            "name": "Ice Climbers - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Ice Climbers"]
           },
           {
-            "name": "Zelda - Classic Trophy",
+            "name": "Zelda - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Zelda"]
           },
           {
-            "name": "Sheik - Classic Trophy",
+            "name": "Sheik - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Zelda"]
           },
           {
-            "name": "Luigi - Classic Trophy",
+            "name": "Luigi - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Luigi"]
           },
           {
-            "name": "Jigglypuff - Classic Trophy",
+            "name": "Jigglypuff - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Jigglypuff"]
           },
           {
-            "name": "Mewtwo - Classic Trophy",
+            "name": "Mewtwo - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Mewtwo"]
           },
           {
-            "name": "Marth - Classic Trophy",
+            "name": "Marth - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Marth"]
           },
           {
-            "name": "Mr. Game & Watch - Classic Trophy",
+            "name": "Mr. Game & Watch - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Mr. Game & Watch"]
           },
           {
-            "name": "Dr. Mario - Classic Trophy",
+            "name": "Dr. Mario - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Dr. Mario"]
           },
           {
-            "name": "Ganondorf - Classic Trophy",
+            "name": "Ganondorf - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Ganondorf"]
           },
           {
-            "name": "Falco - Classic Trophy",
+            "name": "Falco - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Falco"]
           },
           {
-            "name": "Young Link - Classic Trophy",
+            "name": "Young Link - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Young Link"]
           },
           {
-            "name": "Pichu - Classic Trophy",
+            "name": "Pichu - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Pichu"]
           },
           {
-            "name": "Roy - Classic Trophy",
+            "name": "Roy - Adventure Trophy",
             "chest_unopened_img": "images/chests/trophy_uncollected.png",
             "chest_opened_img": "images/chests/trophy_collected.png",
             "access_rules": ["$CanGetAdventureTrophy|Roy"]
